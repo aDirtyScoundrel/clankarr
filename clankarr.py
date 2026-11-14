@@ -7,6 +7,7 @@ from the mounted service configs at runtime and never leave this host.
 import base64
 import json
 import os
+import urllib.parse
 import xml.etree.ElementTree as ET
 from typing import Annotated, Any, Optional
 
@@ -1042,6 +1043,65 @@ async def release_info(
             summary.append(e)
         return out({"title": s.get("title"), "tvdbId": tvdb,
                     "seasons": summary})
+    except Exception as e:
+        return err(e)
+
+
+NOTIFICATION_AGENTS = ("discord", "slack", "telegram", "pushbullet",
+                       "pushover", "email", "webpush", "webhook",
+                       "gotify", "ntfy")
+
+
+@mcp.tool(name="notifications_list", annotations={
+    "title": "List notification agents", "readOnlyHint": True,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def notifications_list() -> str:
+    """Seerr notification agents: which are enabled and for what events.
+
+    Webhook URLs are masked to the host only (they contain secrets).
+    Use notifications_test to verify an agent actually delivers.
+    """
+    try:
+        agents = []
+        for a in NOTIFICATION_AGENTS:
+            try:
+                cfg = await api(
+                    "seerr", "GET", f"/api/v1/settings/notifications/{a}")
+            except Exception:
+                continue
+            entry = {"agent": a, "enabled": bool(cfg.get("enabled")),
+                     "types": cfg.get("types")}
+            url = (cfg.get("options") or {}).get("webhookUrl")
+            if url:
+                entry["webhookHost"] = urllib.parse.urlparse(url).netloc
+            agents.append(entry)
+        return out({"agents": agents,
+                    "enabledCount": sum(1 for a in agents
+                                        if a["enabled"])})
+    except Exception as e:
+        return err(e)
+
+
+@mcp.tool(name="notifications_test", annotations={
+    "title": "Send a test notification", "readOnlyHint": False,
+    "destructiveHint": False, "idempotentHint": False, "openWorldHint": True})
+async def notifications_test(
+    agent: Annotated[str, Field(
+        description="Agent name, e.g. webhook, discord, telegram")],
+) -> str:
+    """Send a test notification through one Seerr agent using its saved
+    config. Catches expired webhook URLs and rotated tokens.
+    """
+    if agent not in NOTIFICATION_AGENTS:
+        return out({"error": f"unknown agent '{agent}'",
+                    "valid": list(NOTIFICATION_AGENTS)})
+    try:
+        cfg = await api("seerr", "GET",
+                        f"/api/v1/settings/notifications/{agent}")
+        await api("seerr", "POST",
+                  f"/api/v1/settings/notifications/{agent}/test", body=cfg)
+        return out({"ok": True, "agent": agent,
+                    "note": "test notification sent"})
     except Exception as e:
         return err(e)
 
