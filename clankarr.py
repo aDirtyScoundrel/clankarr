@@ -16,7 +16,7 @@ from pydantic import Field
 from starlette.responses import JSONResponse
 from starlette.types import ASGIApp, Receive, Scope, Send
 
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 PORT = int(os.environ.get("CLANKARR_PORT", "8099"))
 TOKEN = os.environ.get("CLANKARR_TOKEN", "")
 CONFIG_DIR = os.environ.get("CLANKARR_CONFIG_DIR", "/config")
@@ -135,17 +135,37 @@ def out(data: Any) -> str:
 
 # ---------------------------------------------------------------- jellyfin helpers
 
+_jf_uid: Optional[str] = None
+
+
+async def jf_uid() -> str:
+    """Resolve the Jellyfin admin user id (cached).
+
+    The root /Items endpoint under-reports the library (it drops some
+    box-set members). The user-scoped /Users/{id}/Items returns the full
+    set, so every Jellyfin query must run in a user context.
+    """
+    global _jf_uid
+    if _jf_uid is None:
+        users = await api("jellyfin", "GET", "/Users")
+        admin = next((u for u in users
+                      if (u.get("Policy") or {}).get("IsAdministrator")),
+                     users[0])
+        _jf_uid = admin["Id"]
+    return _jf_uid
+
 
 async def jf_all_items(item_type: str) -> list[dict]:
-    """Fetch every Jellyfin item of a type, paginated.
+    """Fetch every Jellyfin item of a type, paginated, in user context.
 
     A single unpaginated /Items call can return a partial set. Always
     page until TotalRecordCount is reached.
     """
+    uid = await jf_uid()
     items: list[dict] = []
     start = 0
     while True:
-        d = await api("jellyfin", "GET", "/Items", params={
+        d = await api("jellyfin", "GET", f"/Users/{uid}/Items", params={
             "Recursive": "true", "IncludeItemTypes": item_type,
             "Fields": "ProviderIds,DateCreated",
             "StartIndex": start, "Limit": 500})
@@ -174,7 +194,8 @@ def jf_ids(items: list[dict]) -> dict[str, set[int]]:
 
 async def jf_find(title: str, tmdb: Optional[int] = None,
                   tvdb: Optional[int] = None) -> list[dict]:
-    d = await api("jellyfin", "GET", "/Items", params={
+    uid = await jf_uid()
+    d = await api("jellyfin", "GET", f"/Users/{uid}/Items", params={
         "Recursive": "true", "SearchTerm": title,
         "Fields": "ProviderIds,DateCreated"})
     hits = []
