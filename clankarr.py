@@ -16,7 +16,7 @@ from pydantic import Field
 from starlette.responses import JSONResponse
 from starlette.types import ASGIApp, Receive, Scope, Send
 
-VERSION = "1.2.0"
+VERSION = "1.3.0"
 PORT = int(os.environ.get("CLANKARR_PORT", "8099"))
 TOKEN = os.environ.get("CLANKARR_TOKEN", "")
 CONFIG_DIR = os.environ.get("CLANKARR_CONFIG_DIR", "/config")
@@ -37,7 +37,7 @@ mcp = FastMCP(
     "clankarr",
     instructions=(
         "Media stack tools for Seerr, Radarr, Sonarr and Jellyfin. "
-        "Use clankarr_media_status for one title, clankarr_stack_drift "
+        "Use media_status for one title, stack_drift "
         "for library-wide staleness. Availability is promoted by the "
         "radarr-scan/sonarr-scan jobs and demoted only by the "
         "availability-sync job. Seerr has no inbound webhooks."),
@@ -217,7 +217,7 @@ async def jf_find(title: str, tmdb: Optional[int] = None,
 # ---------------------------------------------------------------- tools
 
 
-@mcp.tool(name="clankarr_media_search", annotations={
+@mcp.tool(name="media_search", annotations={
     "title": "Search media", "readOnlyHint": True, "destructiveHint": False,
     "idempotentHint": True, "openWorldHint": True})
 async def media_search(
@@ -229,7 +229,7 @@ async def media_search(
     """Search Seerr for movies and TV shows by title.
 
     Returns matches with tmdbId, year and current Seerr status. Use the
-    tmdbId with clankarr_media_status or clankarr_request_create. Person
+    tmdbId with media_status or request_create. Person
     results are filtered out.
     """
     try:
@@ -254,7 +254,7 @@ async def media_search(
         return err(e)
 
 
-@mcp.tool(name="clankarr_media_status", annotations={
+@mcp.tool(name="media_status", annotations={
     "title": "Cross-referenced media status", "readOnlyHint": True,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
 async def media_status(
@@ -316,7 +316,7 @@ async def media_status(
             if not jf:
                 problems.append("not in Jellyfin (or missing provider ids)")
         verdict = ("DRIFT: " + "; ".join(problems) +
-                   ". Run clankarr_job_run('availability-sync') to reconcile."
+                   ". Run job_run('availability-sync') to reconcile."
                    if problems else "consistent")
         return out({"title": title, "mediaType": mt, "tmdbId": tmdb,
                     "seerr": seerr, "arr": arr, "jellyfin": jf,
@@ -325,7 +325,7 @@ async def media_status(
         return err(e)
 
 
-@mcp.tool(name="clankarr_request_list", annotations={
+@mcp.tool(name="request_list", annotations={
     "title": "List requests", "readOnlyHint": True, "destructiveHint": False,
     "idempotentHint": True, "openWorldHint": True})
 async def request_list(
@@ -350,7 +350,7 @@ async def request_list(
         return err(e)
 
 
-@mcp.tool(name="clankarr_request_create", annotations={
+@mcp.tool(name="request_create", annotations={
     "title": "Create a media request", "readOnlyHint": False,
     "destructiveHint": False, "idempotentHint": False, "openWorldHint": True})
 async def request_create(
@@ -389,7 +389,7 @@ async def request_create(
         return err(e)
 
 
-@mcp.tool(name="clankarr_jobs_list", annotations={
+@mcp.tool(name="jobs_list", annotations={
     "title": "List Seerr jobs", "readOnlyHint": True, "destructiveHint": False,
     "idempotentHint": True, "openWorldHint": True})
 async def jobs_list() -> str:
@@ -410,7 +410,7 @@ async def jobs_list() -> str:
         return err(e)
 
 
-@mcp.tool(name="clankarr_job_run", annotations={
+@mcp.tool(name="job_run", annotations={
     "title": "Run a Seerr job now", "readOnlyHint": False,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
 async def job_run(
@@ -436,7 +436,7 @@ async def job_run(
         return err(e)
 
 
-@mcp.tool(name="clankarr_job_set_schedule", annotations={
+@mcp.tool(name="job_set_schedule", annotations={
     "title": "Set a Seerr job schedule", "readOnlyHint": False,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
 async def job_set_schedule(
@@ -466,7 +466,7 @@ async def job_set_schedule(
         return err(e)
 
 
-@mcp.tool(name="clankarr_stack_drift", annotations={
+@mcp.tool(name="stack_drift", annotations={
     "title": "Library-wide drift check", "readOnlyHint": True,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
 async def stack_drift(
@@ -479,7 +479,7 @@ async def stack_drift(
     Reason codes: NOT-IN-ARR (removed from Radarr/Sonarr), ARR-NO-FILE
     (monitored but fileless), NOT-IN-JELLYFIN (advisory: may also mean
     missing Jellyfin provider ids). ARR reasons are authoritative.
-    Fix with clankarr_job_run('availability-sync').
+    Fix with job_run('availability-sync').
     """
     try:
         media: list[dict] = []
@@ -537,7 +537,7 @@ async def stack_drift(
             "tvDriftCount": len(tv_drift),
             "movies": movie_drift[:limit],
             "tv": tv_drift[:limit],
-            "fix": "clankarr_job_run('availability-sync')"})
+            "fix": "job_run('availability-sync')"})
     except Exception as e:
         return err(e)
 

@@ -5,14 +5,16 @@ Sonarr and Jellyfin, and it controls the Seerr sync jobs.
 
 ## Tools
 
-- clankarr_media_search: search Seerr by title.
-- clankarr_media_status: one title across all four services, with a verdict.
-- clankarr_request_list: list Seerr requests.
-- clankarr_request_create: request a movie or show. Triggers a download.
-- clankarr_jobs_list: Seerr job schedules and state.
-- clankarr_job_run: run a Seerr job now.
-- clankarr_job_set_schedule: change a job cron schedule (6 fields).
-- clankarr_stack_drift: find stale "available" entries library-wide.
+Registered in Hermes as mcp_clankarr_<tool>.
+
+- media_search: search Seerr by title.
+- media_status: one title across all four services, with a verdict.
+- request_list: list Seerr requests.
+- request_create: request a movie or show. Triggers a download.
+- jobs_list: Seerr job schedules and state.
+- job_run: run a Seerr job now.
+- job_set_schedule: change a job cron schedule (6 fields).
+- stack_drift: find stale "available" entries library-wide.
 
 ## How availability moves
 

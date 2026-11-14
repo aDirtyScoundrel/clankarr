@@ -1,6 +1,6 @@
 services:
   clankarr:
-    image: local/clankarr:1.2
+    image: local/clankarr:1.3
     container_name: clankarr
     restart: unless-stopped
     environment:
