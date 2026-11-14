@@ -358,6 +358,8 @@ async def request_create(
     tmdb_id: Annotated[int, Field(ge=1)],
     seasons: Annotated[str, Field(
         description="TV only: 'all' or comma list like '1,2'")] = "all",
+    profile_id: Annotated[int | None, Field(
+        description="Optional arr quality profile id for this request")] = None,
 ) -> str:
     """Request a movie or TV show. This triggers a download in Radarr/Sonarr.
 
@@ -381,10 +383,74 @@ async def request_create(
         if mt == "tv":
             body["seasons"] = (seasons if seasons == "all"
                                else [int(s) for s in seasons.split(",")])
+        if profile_id is not None:
+            body["profileId"] = profile_id
         r = await api("seerr", "POST", "/api/v1/request", body=body)
         return out({"ok": True, "requestId": r.get("id"),
                     "status": REQ_STATUS.get(r.get("status")),
                     "type": r.get("type")})
+    except Exception as e:
+        return err(e)
+
+
+async def _request_action(request_id: int, action: str) -> str:
+    try:
+        r = await api("seerr", "POST",
+                      f"/api/v1/request/{request_id}/{action}", body={})
+        return out({"ok": True, "requestId": request_id,
+                    "status": REQ_STATUS.get((r or {}).get("status"))})
+    except Exception as e:
+        return err(e)
+
+
+@mcp.tool(name="request_approve", annotations={
+    "title": "Approve a request", "readOnlyHint": False,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def request_approve(
+    request_id: Annotated[int, Field(ge=1, description="Seerr request id")],
+) -> str:
+    """Approve a pending Seerr request. The arr then searches for it.
+
+    Goes through Seerr; never bypasses the request system.
+    """
+    return await _request_action(request_id, "approve")
+
+
+@mcp.tool(name="request_decline", annotations={
+    "title": "Decline a request", "readOnlyHint": False,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def request_decline(
+    request_id: Annotated[int, Field(ge=1, description="Seerr request id")],
+) -> str:
+    """Decline a pending Seerr request. No media or files are touched."""
+    return await _request_action(request_id, "decline")
+
+
+@mcp.tool(name="request_retry", annotations={
+    "title": "Retry a request", "readOnlyHint": False,
+    "destructiveHint": False, "idempotentHint": False, "openWorldHint": True})
+async def request_retry(
+    request_id: Annotated[int, Field(ge=1, description="Seerr request id")],
+) -> str:
+    """Retry a failed Seerr request: re-triggers the arr search via Seerr."""
+    return await _request_action(request_id, "retry")
+
+
+@mcp.tool(name="request_delete", annotations={
+    "title": "Delete a request record", "readOnlyHint": False,
+    "destructiveHint": True, "idempotentHint": True, "openWorldHint": True})
+async def request_delete(
+    request_id: Annotated[int, Field(ge=1, description="Seerr request id")],
+) -> str:
+    """Delete a Seerr request RECORD only. Never deletes media or files.
+
+    Use to clear declined/failed requests from the list. The library is
+    untouched.
+    """
+    try:
+        await api("seerr", "DELETE", f"/api/v1/request/{request_id}")
+        return out({"ok": True, "requestId": request_id,
+                    "note": "request record removed; media/files untouched"})
     except Exception as e:
         return err(e)
 
