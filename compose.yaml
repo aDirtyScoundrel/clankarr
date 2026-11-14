@@ -1,0 +1,20 @@
+services:
+  clankarr:
+    image: local/clankarr:1.0
+    container_name: clankarr
+    restart: unless-stopped
+    environment:
+      - TZ=America/Toronto
+      - CLANKARR_TOKEN=${CLANKARR_TOKEN}
+      - CLANKARR_PORT=8099
+    ports:
+      - "${CLANKARR_HOST_PORT:-8099}:8099"
+    volumes:
+      - /dockercompose/config:/config:ro
+    networks:
+      - homelab
+
+networks:
+  homelab:
+    external: true
+    name: jellyfin-server_homelab_net
