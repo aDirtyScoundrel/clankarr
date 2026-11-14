@@ -4,6 +4,7 @@
 Cross-references Seerr, Radarr, Sonarr and Jellyfin. API keys are read
 from the mounted service configs at runtime and never leave this host.
 """
+import base64
 import json
 import os
 import xml.etree.ElementTree as ET
@@ -604,6 +605,298 @@ async def stack_drift(
             "movies": movie_drift[:limit],
             "tv": tv_drift[:limit],
             "fix": "job_run('availability-sync')"})
+    except Exception as e:
+        return err(e)
+
+
+# ---------------------------------------------------------------- nzbget
+
+_nzb_conn: Optional[dict] = None
+
+
+async def nzbget_conn() -> Optional[dict]:
+    """NZBGet host/port from Radarr's downloadclient config (cached).
+
+    Credentials are NOT discoverable: Radarr's API masks the password.
+    They come from NZBGET_USER / NZBGET_PASS env vars instead.
+    """
+    global _nzb_conn
+    if _nzb_conn is None:
+        conn: dict = {}
+        try:
+            dc = await api("radarr", "GET", "/api/v3/downloadclient")
+            n = next((d for d in dc if d.get("implementation") == "Nzbget"
+                      and d.get("enable")), None)
+            if n:
+                f = {x["name"]: x.get("value") for x in n.get("fields", [])}
+                if f.get("host"):
+                    conn = {"host": f["host"],
+                            "port": int(f.get("port") or 6789)}
+        except Exception:
+            pass
+        _nzb_conn = conn
+    return _nzb_conn or None
+
+
+async def nzbget_rpc(method: str, params: Optional[list] = None):
+    """Read-only NZBGet JSON-RPC. Returns (result, note); note explains
+    any degradation. Never raises."""
+    user = os.environ.get("NZBGET_USER", "")
+    pw = os.environ.get("NZBGET_PASS", "")
+    if not user or not pw:
+        return None, ("NZBGet credentials not configured "
+                      "(NZBGET_USER/NZBGET_PASS)")
+    conn = await nzbget_conn()
+    if not conn:
+        return None, "no enabled NZBGet download client found in Radarr"
+    auth = base64.b64encode(f"{user}:{pw}".encode()).decode()
+    try:
+        r = await http.post(
+            f"http://{conn['host']}:{conn['port']}/jsonrpc",
+            json={"method": method, "params": params or [], "id": 1},
+            headers={"Authorization": f"Basic {auth}"}, timeout=15.0)
+        if r.status_code == 401:
+            return None, "NZBGet auth failed (check NZBGET_USER/NZBGET_PASS)"
+        r.raise_for_status()
+        return r.json().get("result"), None
+    except Exception as e:
+        return None, f"NZBGet unreachable: {type(e).__name__}"
+
+
+def _nzb_progress(g: dict) -> dict:
+    size = g.get("FileSizeMB") or 0
+    rem = g.get("RemainingSizeMB") or 0
+    pct = round((size - rem) / size * 100, 1) if size else 0.0
+    return {"name": g.get("NZBName"), "status": g.get("Status"),
+            "progressPct": pct, "sizeMB": size, "remainingMB": rem,
+            "healthPct": (g.get("Health") or 0) / 10}
+
+
+# ---------------------------------------------------------------- diagnosis tools
+
+
+@mcp.tool(name="queue_status", annotations={
+    "title": "Download queue across the stack", "readOnlyHint": True,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def queue_status(
+    media_type: Annotated[str | None, Field(
+        description="Optional filter: movie or tv")] = None,
+    limit: Annotated[int, Field(ge=1, le=100)] = 20,
+) -> str:
+    """Active downloads in Radarr/Sonarr plus the NZBGet queue.
+
+    Read-only observation. NZBGet progress is computed from sizes (the
+    API has no Progress field); health is permille converted to percent.
+    Without NZBGet credentials the arr queues still return, with a note.
+    """
+    try:
+        rows = []
+        for svc, mt in (("radarr", "movie"), ("sonarr", "tv")):
+            if media_type and media_type != mt:
+                continue
+            try:
+                q = await api(svc, "GET", "/api/v3/queue",
+                              params={"page": 1, "pageSize": limit})
+            except Exception:
+                continue
+            for r in q.get("records", []):
+                rows.append({"arr": svc, "title": r.get("title"),
+                             "status": r.get("status"),
+                             "state": r.get("trackedDownloadState"),
+                             "sizeleft": r.get("sizeleft"),
+                             "timeleft": r.get("timeleft"),
+                             "error": r.get("errorMessage"),
+                             "downloadClient": r.get("downloadClient")})
+        groups, note = await nzbget_rpc("listgroups")
+        nzb = [_nzb_progress(g) for g in groups[:limit]] \
+            if groups is not None else None
+        return out({"arrQueue": rows, "arrCount": len(rows),
+                    "nzbget": nzb, "nzbgetNote": note})
+    except Exception as e:
+        return err(e)
+
+
+@mcp.tool(name="download_history", annotations={
+    "title": "Download history for a title", "readOnlyHint": True,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def download_history(
+    media_type: Annotated[str, Field(pattern="^(movie|tv)$")],
+    tmdb_id: Annotated[int, Field(ge=1)],
+    limit: Annotated[int, Field(ge=1, le=100)] = 20,
+) -> str:
+    """Recent arr history events for one title: grabs, imports, failures.
+
+    Newest first. Use to see what was grabbed and why an import failed.
+    """
+    try:
+        if media_type == "movie":
+            movies = await api("radarr", "GET", "/api/v3/movie")
+            m = next((x for x in movies if x.get("tmdbId") == tmdb_id), None)
+            if not m:
+                return out({"error": "title not found in Radarr",
+                            "hint": "Check the tmdbId with media_search."})
+            svc, idfield, arr_id = "radarr", "movieId", m["id"]
+        else:
+            d = await api("seerr", "GET", f"/api/v1/tv/{tmdb_id}")
+            tvdb = (d.get("mediaInfo") or {}).get("tvdbId")
+            series = await api("sonarr", "GET", "/api/v3/series")
+            s = next((x for x in series if x.get("tvdbId") == tvdb), None)
+            if not s:
+                return out({"error": "title not found in Sonarr",
+                            "hint": "Check the tmdbId with media_search."})
+            svc, idfield, arr_id = "sonarr", "seriesId", s["id"]
+        h = await api(svc, "GET", "/api/v3/history", params={
+            idfield: arr_id, "page": 1, "pageSize": limit,
+            "sortKey": "date", "sortDirection": "descending"})
+        events = [{"date": e.get("date"), "eventType": e.get("eventType"),
+                   "sourceTitle": e.get("sourceTitle"),
+                   "quality": ((e.get("quality") or {}).get("quality")
+                               or {}).get("name"),
+                   "languages": [l.get("name")
+                                 for l in (e.get("languages") or [])]}
+                  for e in h.get("records", [])]
+        return out({"arr": svc, "count": len(events), "events": events})
+    except Exception as e:
+        return err(e)
+
+
+@mcp.tool(name="request_trace", annotations={
+    "title": "Trace a request through the whole stack", "readOnlyHint": True,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def request_trace(
+    media_type: Annotated[str, Field(pattern="^(movie|tv)$")],
+    tmdb_id: Annotated[int, Field(ge=1)],
+) -> str:
+    """Answer "why is this request stuck?" by walking the full chain:
+    Seerr -> Radarr/Sonarr -> queue -> NZBGet -> history -> Jellyfin.
+
+    Returns facts plus a verdict: not-requested, not-in-arr, not-monitored,
+    waiting-for-release, downloading, import-blocked, failed-download,
+    waiting-for-import, available, available-but-drifted. Each verdict
+    carries a next_step. Read-only; acts through Seerr only when you then
+    call request_retry or the job tools.
+    """
+    try:
+        try:
+            d = await api("seerr", "GET", f"/api/v1/{media_type}/{tmdb_id}")
+        except ApiError as e:
+            if e.status == 404:
+                return out({"verdict": "not-requested",
+                            "next_step": "request_create if Tyler wants it"})
+            raise
+        mi = d.get("mediaInfo") or {}
+        title = d.get("title") or d.get("name") or f"tmdb:{tmdb_id}"
+        if not mi:
+            return out({"verdict": "not-requested",
+                        "next_step": "request_create if Tyler wants it"})
+        base = {"title": title, "mediaType": media_type, "tmdbId": tmdb_id,
+                "seerrStatus": MEDIA_STATUS.get(mi.get("status"))}
+        if media_type == "movie":
+            movies = await api("radarr", "GET", "/api/v3/movie")
+            m = next((x for x in movies if x.get("tmdbId") == tmdb_id), None)
+            svc, idfield = "radarr", "movieId"
+            arr_id = m.get("id") if m else None
+            has_file = bool(m and m.get("hasFile"))
+            monitored = bool(m and m.get("monitored"))
+            arr_facts = {"inArr": bool(m), "hasFile": has_file,
+                         "monitored": monitored,
+                         "fileAdded": ((m.get("movieFile") or {})
+                                       .get("dateAdded") if m else None)}
+        else:
+            tvdb = mi.get("tvdbId")
+            series = await api("sonarr", "GET", "/api/v3/series")
+            s = next((x for x in series if x.get("tvdbId") == tvdb), None)
+            svc, idfield = "sonarr", "seriesId"
+            arr_id = s.get("id") if s else None
+            stats = (s.get("statistics") or {}) if s else {}
+            has_file = (stats.get("episodeFileCount") or 0) > 0
+            monitored = bool(s and s.get("monitored"))
+            arr_facts = {"inArr": bool(s), "hasFile": has_file,
+                         "monitored": monitored,
+                         "episodeFiles": stats.get("episodeFileCount"),
+                         "episodes": stats.get("episodeCount")}
+        base["arr"] = arr_facts
+        if not arr_facts["inArr"]:
+            return out({**base, "verdict": "not-in-arr",
+                        "next_step": "check the Seerr request state; "
+                                     "request_retry if it failed"})
+        if has_file:
+            jf = await jf_find(title,
+                               tmdb=tmdb_id if media_type == "movie" else None,
+                               tvdb=mi.get("tvdbId"))
+            base["jellyfin"] = jf
+            if mi.get("status") == 5 and jf:
+                return out({**base, "verdict": "available",
+                            "next_step": None})
+            return out({**base, "verdict": "available-but-drifted",
+                        "next_step": "job_run('radarr-scan' or "
+                                     "'availability-sync'); check Jellyfin"})
+        if not monitored:
+            return out({**base, "verdict": "not-monitored",
+                        "next_step": "enable monitoring in the arr UI"})
+        q = await api(svc, "GET", "/api/v3/queue",
+                      params={"page": 1, "pageSize": 100})
+        entry = next((r for r in q.get("records", [])
+                      if r.get(idfield) == arr_id), None)
+        groups, nzb_note = await nzbget_rpc("listgroups")
+        if entry:
+            state = entry.get("trackedDownloadState") or entry.get("status")
+            detail = entry.get("errorMessage") or "; ".join(
+                x.get("message", "")
+                for x in (entry.get("statusMessages") or []))
+            nzb_match = None
+            if groups:
+                t = (entry.get("title") or "").lower()
+                g = next((g for g in groups
+                          if t and t in (g.get("NZBName") or "").lower()),
+                         None)
+                nzb_match = _nzb_progress(g) if g else None
+            if state in ("importPending", "importBlocked"):
+                verdict = "import-blocked"
+                step = "read detail; common causes: sample file, wrong " \
+                       "path, permissions. Fix in the arr, then it imports."
+            elif entry.get("status") == "failed" or state == "failed":
+                verdict = "failed-download"
+                step = "request_retry, or check indexers/quality profile"
+            else:
+                verdict = "downloading"
+                step = "wait; re-check queue_status for progress"
+            return out({**base, "verdict": verdict, "detail": detail or None,
+                        "queue": {"status": entry.get("status"),
+                                  "state": state,
+                                  "sizeleft": entry.get("sizeleft"),
+                                  "timeleft": entry.get("timeleft")},
+                        "nzbget": nzb_match, "nzbgetNote": nzb_note,
+                        "next_step": step})
+        h = await api(svc, "GET", "/api/v3/history", params={
+            idfield: arr_id, "page": 1, "pageSize": 10,
+            "sortKey": "date", "sortDirection": "descending"})
+        events = h.get("records", [])
+        base["recentHistory"] = [
+            {"date": e.get("date"), "eventType": e.get("eventType"),
+             "sourceTitle": e.get("sourceTitle")} for e in events[:5]]
+        grabbed = [e for e in events if e.get("eventType") == "grabbed"]
+        if grabbed:
+            nzb_hist, _ = await nzbget_rpc("history", [False, 0, 20])
+            fail = None
+            if nzb_hist:
+                t = (grabbed[0].get("sourceTitle") or "").lower()
+                fail = next((x for x in nzb_hist
+                             if t and t in (x.get("Name") or "").lower()
+                             and str(x.get("Status", "")).startswith(
+                                 "FAILURE")), None)
+            if fail:
+                return out({**base, "verdict": "failed-download",
+                            "detail": f"NZBGet: {fail.get('Status')}",
+                            "next_step": "request_retry or manual search "
+                                         "in the arr"})
+            return out({**base, "verdict": "waiting-for-import",
+                        "next_step": "grabbed but not queued: check NZBGet "
+                                     "post-processing, then the arr's "
+                                     "activity tab"})
+        return out({**base, "verdict": "waiting-for-release",
+                    "next_step": "request_retry to re-search; if it keeps "
+                                 "failing check quality profile and indexers"})
     except Exception as e:
         return err(e)
 
