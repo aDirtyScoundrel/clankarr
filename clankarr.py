@@ -609,6 +609,72 @@ async def stack_drift(
         return err(e)
 
 
+@mcp.tool(name="stack_health", annotations={
+    "title": "One-call stack triage", "readOnlyHint": True,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def stack_health(
+    include_drift: Annotated[bool, Field(
+        description="Include the library drift scan (slower)")] = True,
+) -> str:
+    """Triage the whole media stack in one call.
+
+    Checks Radarr/Sonarr health items, Seerr jobs, Jellyfin reachability,
+    NZBGet status, and (optionally) library drift. Overall is ok, warn
+    (issues or drift found), or error (a service is unreachable).
+    """
+    services: dict[str, Any] = {}
+    overall = "ok"
+    for svc in ("radarr", "sonarr"):
+        try:
+            items = await api(svc, "GET", "/api/v3/health")
+            services[svc] = {
+                "reachable": True,
+                "issues": [{"type": i.get("type"),
+                            "message": i.get("message")} for i in items]}
+            if items and overall == "ok":
+                overall = "warn"
+        except Exception as e:
+            services[svc] = {"reachable": False, "error": str(e)}
+            overall = "error"
+    try:
+        jobs = await api("seerr", "GET", "/api/v1/settings/jobs")
+        services["seerr"] = {
+            "reachable": True, "jobs": len(jobs),
+            "running": [j.get("id") for j in jobs if j.get("running")]}
+    except Exception as e:
+        services["seerr"] = {"reachable": False, "error": str(e)}
+        overall = "error"
+    try:
+        info = await api("jellyfin", "GET", "/System/Info/Public")
+        services["jellyfin"] = {"reachable": True,
+                                "version": info.get("Version")}
+    except Exception as e:
+        services["jellyfin"] = {"reachable": False, "error": str(e)}
+        overall = "error"
+    status, note = await nzbget_rpc("status")
+    if status is not None:
+        rate = (status.get("DownloadRateLo", 0)
+                + (status.get("DownloadRateHi", 0) << 32)) \
+            or status.get("DownloadRate", 0)
+        services["nzbget"] = {"reachable": True,
+                              "downloadRateMBs": round(rate / 1048576, 2),
+                              "queueSize": status.get("QueueSize")}
+    else:
+        services["nzbget"] = {"reachable": False, "note": note}
+    if include_drift:
+        try:
+            drift = json.loads(await stack_drift(limit=1))
+            services["drift"] = {
+                "movieDriftCount": drift.get("movieDriftCount"),
+                "tvDriftCount": drift.get("tvDriftCount")}
+            if ((drift.get("movieDriftCount") or 0)
+                    + (drift.get("tvDriftCount") or 0)) and overall == "ok":
+                overall = "warn"
+        except Exception as e:
+            services["drift"] = {"error": str(e)}
+    return out({"overall": overall, "services": services})
+
+
 # ---------------------------------------------------------------- nzbget
 
 _nzb_conn: Optional[dict] = None
