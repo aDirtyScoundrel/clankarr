@@ -967,6 +967,85 @@ async def request_trace(
         return err(e)
 
 
+@mcp.tool(name="release_info", annotations={
+    "title": "File quality and release data", "readOnlyHint": True,
+    "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
+async def release_info(
+    media_type: Annotated[str, Field(pattern="^(movie|tv)$")],
+    tmdb_id: Annotated[int, Field(ge=1)],
+) -> str:
+    """Current file data for replacement decisions: quality, resolution,
+    codec, audio languages, size, profile. TV gives a per-season summary.
+
+    Feed this to a comparison before grabbing a replacement; the grab
+    itself must go through Seerr (request system) or the arr UI.
+    """
+    try:
+        if media_type == "movie":
+            movies = await api("radarr", "GET", "/api/v3/movie")
+            m = next((x for x in movies if x.get("tmdbId") == tmdb_id), None)
+            if not m:
+                return out({"error": "title not found in Radarr"})
+            mf = m.get("movieFile") or {}
+            mi = mf.get("mediaInfo") or {}
+            profile = None
+            try:
+                profiles = await api("radarr", "GET",
+                                     "/api/v3/qualityprofile")
+                p = next((x for x in profiles
+                          if x.get("id") == m.get("qualityProfileId")),
+                         None)
+                if p:
+                    profile = {"id": p.get("id"), "name": p.get("name")}
+            except Exception:
+                pass
+            return out({
+                "title": m.get("title"), "tmdbId": tmdb_id,
+                "file": {"quality": ((mf.get("quality") or {})
+                                     .get("quality") or {}).get("name"),
+                         "resolution": mi.get("resolution"),
+                         "videoCodec": mi.get("videoCodec"),
+                         "audioLanguages": mi.get("audioLanguages"),
+                         "sizeGB": round((mf.get("size") or 0)
+                                         / 1073741824, 2),
+                         "runtime": mf.get("runtime"),
+                         "cutoffNotMet": mf.get("qualityCutoffNotMet"),
+                         "path": mf.get("path")},
+                "profile": profile})
+        d = await api("seerr", "GET", f"/api/v1/tv/{tmdb_id}")
+        tvdb = (d.get("mediaInfo") or {}).get("tvdbId")
+        series = await api("sonarr", "GET", "/api/v3/series")
+        s = next((x for x in series if x.get("tvdbId") == tvdb), None)
+        if not s:
+            return out({"error": "title not found in Sonarr"})
+        files = await api("sonarr", "GET", "/api/v3/episodefile",
+                          params={"seriesId": s["id"]})
+        seasons: dict[int, dict] = {}
+        for f in files:
+            sn = f.get("seasonNumber", 0)
+            entry = seasons.setdefault(
+                sn, {"season": sn, "files": 0, "sizeGB": 0.0,
+                     "qualities": {}, "audioLanguages": set()})
+            entry["files"] += 1
+            entry["sizeGB"] += (f.get("size") or 0) / 1073741824
+            qn = ((f.get("quality") or {}).get("quality") or {}).get("name")
+            if qn:
+                entry["qualities"][qn] = entry["qualities"].get(qn, 0) + 1
+            langs = (f.get("mediaInfo") or {}).get("audioLanguages")
+            if langs:
+                entry["audioLanguages"].add(langs)
+        summary = []
+        for sn in sorted(seasons):
+            e = seasons[sn]
+            e["sizeGB"] = round(e["sizeGB"], 2)
+            e["audioLanguages"] = sorted(e["audioLanguages"])
+            summary.append(e)
+        return out({"title": s.get("title"), "tvdbId": tvdb,
+                    "seasons": summary})
+    except Exception as e:
+        return err(e)
+
+
 # ---------------------------------------------------------------- auth + app
 
 
