@@ -6,19 +6,17 @@ from the mounted service configs at runtime and never leave this host.
 """
 import json
 import os
-import re
-import time
 import xml.etree.ElementTree as ET
-from typing import Any, Optional
+from typing import Annotated, Any, Optional
 
 import httpx
 import uvicorn
 from mcp.server.fastmcp import FastMCP
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import Field
 from starlette.responses import JSONResponse
 from starlette.types import ASGIApp, Receive, Scope, Send
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 PORT = int(os.environ.get("CLANKARR_PORT", "8099"))
 TOKEN = os.environ.get("CLANKARR_TOKEN", "")
 CONFIG_DIR = os.environ.get("CLANKARR_CONFIG_DIR", "/config")
@@ -90,6 +88,12 @@ keys = Keys()
 # ---------------------------------------------------------------- http helpers
 
 
+class ApiError(Exception):
+    def __init__(self, service: str, status: int, path: str) -> None:
+        self.service, self.status, self.path = service, status, path
+        super().__init__(f"{service} HTTP {status} on {path}")
+
+
 async def api(service: str, method: str, path: str,
               body: Optional[dict] = None, params: Optional[dict] = None,
               _retry: bool = True) -> Any:
@@ -110,12 +114,6 @@ async def api(service: str, method: str, path: str,
     if r.status_code == 204 or not r.content:
         return None
     return r.json()
-
-
-class ApiError(Exception):
-    def __init__(self, service: str, status: int, path: str) -> None:
-        self.service, self.status, self.path = service, status, path
-        super().__init__(f"{service} HTTP {status} on {path}")
 
 
 def err(e: Exception) -> str:
@@ -195,60 +193,18 @@ async def jf_find(title: str, tmdb: Optional[int] = None,
     return hits
 
 
-# ---------------------------------------------------------------- input models
-
-
-class SearchInput(BaseModel):
-    model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
-    query: str = Field(..., min_length=1, max_length=200,
-                       description="Title to search for, e.g. 'Dune'")
-    limit: int = Field(default=8, ge=1, le=25)
-
-
-class StatusInput(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-    media_type: str = Field(..., pattern="^(movie|tv)$")
-    tmdb_id: int = Field(..., ge=1, description="TMDB id (not the Seerr media id)")
-
-
-class RequestListInput(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-    take: int = Field(default=20, ge=1, le=100)
-    filter: str = Field(default="all",
-                        description="all | pending | approved | processing | available")
-
-
-class RequestCreateInput(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-    media_type: str = Field(..., pattern="^(movie|tv)$")
-    tmdb_id: int = Field(..., ge=1)
-    seasons: str = Field(default="all",
-                         description="TV only: 'all' or comma list like '1,2'")
-
-
-class JobRunInput(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-    job_id: str = Field(..., description="e.g. radarr-scan, sonarr-scan, availability-sync")
-
-
-class JobScheduleInput(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-    job_id: str = Field(...)
-    schedule: str = Field(..., description="6-field cron: sec min hour day month weekday, e.g. '0 */5 * * * *'")
-
-
-class DriftInput(BaseModel):
-    model_config = ConfigDict(extra="forbid")
-    limit: int = Field(default=50, ge=1, le=500)
-
-
 # ---------------------------------------------------------------- tools
 
 
 @mcp.tool(name="clankarr_media_search", annotations={
     "title": "Search media", "readOnlyHint": True, "destructiveHint": False,
     "idempotentHint": True, "openWorldHint": True})
-async def media_search(params: SearchInput) -> str:
+async def media_search(
+    query: Annotated[str, Field(min_length=1, max_length=200,
+                                description="Title to search for, e.g. 'Dune'")],
+    limit: Annotated[int, Field(ge=1, le=25,
+                                description="Max results")] = 8,
+) -> str:
     """Search Seerr for movies and TV shows by title.
 
     Returns matches with tmdbId, year and current Seerr status. Use the
@@ -257,7 +213,7 @@ async def media_search(params: SearchInput) -> str:
     """
     try:
         d = await api("seerr", "GET", "/api/v1/search",
-                      params={"query": params.query, "page": 1})
+                      params={"query": query, "page": 1})
         results = []
         for r in d.get("results", []):
             mt = r.get("mediaType")
@@ -269,9 +225,9 @@ async def media_search(params: SearchInput) -> str:
                 "title": r.get("title") or r.get("name"),
                 "year": (r.get("releaseDate") or r.get("firstAirDate") or "")[:4],
                 "status": MEDIA_STATUS.get(mi.get("status"), "not requested")})
-            if len(results) >= params.limit:
+            if len(results) >= limit:
                 break
-        return out({"query": params.query, "count": len(results),
+        return out({"query": query, "count": len(results),
                     "results": results})
     except Exception as e:
         return err(e)
@@ -280,7 +236,10 @@ async def media_search(params: SearchInput) -> str:
 @mcp.tool(name="clankarr_media_status", annotations={
     "title": "Cross-referenced media status", "readOnlyHint": True,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
-async def media_status(params: StatusInput) -> str:
+async def media_status(
+    media_type: Annotated[str, Field(pattern="^(movie|tv)$")],
+    tmdb_id: Annotated[int, Field(ge=1, description="TMDB id, not the Seerr media id")],
+) -> str:
     """Full status of one title across Seerr, Radarr/Sonarr and Jellyfin.
 
     Returns the Seerr status and requests, the arr file state, Jellyfin
@@ -288,7 +247,7 @@ async def media_status(params: StatusInput) -> str:
     deleted on disk: the verdict flags that drift.
     """
     try:
-        mt, tmdb = params.media_type, params.tmdb_id
+        mt, tmdb = media_type, tmdb_id
         d = await api("seerr", "GET", f"/api/v1/{mt}/{tmdb}")
         mi = d.get("mediaInfo") or {}
         title = d.get("title") or d.get("name") or f"tmdb:{tmdb}"
@@ -348,13 +307,16 @@ async def media_status(params: StatusInput) -> str:
 @mcp.tool(name="clankarr_request_list", annotations={
     "title": "List requests", "readOnlyHint": True, "destructiveHint": False,
     "idempotentHint": True, "openWorldHint": True})
-async def request_list(params: RequestListInput) -> str:
-    """List Seerr requests, newest first. Filter: all, pending, approved,
-    processing, available."""
+async def request_list(
+    take: Annotated[int, Field(ge=1, le=100)] = 20,
+    filter: Annotated[str, Field(
+        description="all | pending | approved | processing | available")] = "all",
+) -> str:
+    """List Seerr requests, newest first."""
     try:
         d = await api("seerr", "GET", "/api/v1/request",
-                      params={"take": params.take, "sort": "added",
-                              "filter": params.filter})
+                      params={"take": take, "sort": "added",
+                              "filter": filter})
         rows = []
         for q in d.get("results", []):
             m = q.get("media") or {}
@@ -370,14 +332,19 @@ async def request_list(params: RequestListInput) -> str:
 @mcp.tool(name="clankarr_request_create", annotations={
     "title": "Create a media request", "readOnlyHint": False,
     "destructiveHint": False, "idempotentHint": False, "openWorldHint": True})
-async def request_create(params: RequestCreateInput) -> str:
+async def request_create(
+    media_type: Annotated[str, Field(pattern="^(movie|tv)$")],
+    tmdb_id: Annotated[int, Field(ge=1)],
+    seasons: Annotated[str, Field(
+        description="TV only: 'all' or comma list like '1,2'")] = "all",
+) -> str:
     """Request a movie or TV show. This triggers a download in Radarr/Sonarr.
 
     Refuses titles that are already available or already have an open
-    request. TV: seasons='all' or a comma list like '1,2'.
+    request.
     """
     try:
-        mt, tmdb = params.media_type, params.tmdb_id
+        mt, tmdb = media_type, tmdb_id
         d = await api("seerr", "GET", f"/api/v1/{mt}/{tmdb}")
         mi = d.get("mediaInfo") or {}
         if mi.get("status") == 5:
@@ -391,8 +358,8 @@ async def request_create(params: RequestCreateInput) -> str:
                             "status": REQ_STATUS.get(q.get("status"))})
         body: dict[str, Any] = {"mediaType": mt, "mediaId": tmdb, "is4k": False}
         if mt == "tv":
-            body["seasons"] = (params.seasons if params.seasons == "all"
-                               else [int(s) for s in params.seasons.split(",")])
+            body["seasons"] = (seasons if seasons == "all"
+                               else [int(s) for s in seasons.split(",")])
         r = await api("seerr", "POST", "/api/v1/request", body=body)
         return out({"ok": True, "requestId": r.get("id"),
                     "status": REQ_STATUS.get(r.get("status")),
@@ -425,7 +392,10 @@ async def jobs_list() -> str:
 @mcp.tool(name="clankarr_job_run", annotations={
     "title": "Run a Seerr job now", "readOnlyHint": False,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
-async def job_run(params: JobRunInput) -> str:
+async def job_run(
+    job_id: Annotated[str, Field(
+        description="e.g. radarr-scan, sonarr-scan, availability-sync")],
+) -> str:
     """Trigger a Seerr job immediately (returns at once; job runs async).
 
     Use availability-sync to clear stale 'available' entries after
@@ -433,11 +403,11 @@ async def job_run(params: JobRunInput) -> str:
     """
     try:
         jobs = await api("seerr", "GET", "/api/v1/settings/jobs")
-        if not any(j.get("id") == params.job_id for j in jobs):
-            return out({"error": f"unknown job '{params.job_id}'",
+        if not any(j.get("id") == job_id for j in jobs):
+            return out({"error": f"unknown job '{job_id}'",
                         "valid": [j.get("id") for j in jobs]})
         r = await api("seerr", "POST",
-                      f"/api/v1/settings/jobs/{params.job_id}/run", body={})
+                      f"/api/v1/settings/jobs/{job_id}/run", body={})
         return out({"ok": True, "id": r.get("id"),
                     "running": r.get("running"),
                     "nextRun": r.get("nextExecutionTime")})
@@ -448,23 +418,26 @@ async def job_run(params: JobRunInput) -> str:
 @mcp.tool(name="clankarr_job_set_schedule", annotations={
     "title": "Set a Seerr job schedule", "readOnlyHint": False,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
-async def job_set_schedule(params: JobScheduleInput) -> str:
+async def job_set_schedule(
+    job_id: Annotated[str, Field(...)],
+    schedule: Annotated[str, Field(
+        description="6-field cron: sec min hour day month weekday, e.g. '0 */5 * * * *'")],
+) -> str:
     """Change a Seerr job's cron schedule. Takes effect live and persists.
 
-    Schedule is 6-field cron (seconds first), e.g. '0 */5 * * * *' for
-    every 5 minutes. Seerr rejects invalid expressions.
+    Seerr rejects invalid expressions.
     """
     try:
-        if len(params.schedule.split()) != 6:
+        if len(schedule.split()) != 6:
             return out({"error": "schedule must have 6 cron fields",
                         "example": "0 */5 * * * *"})
         jobs = await api("seerr", "GET", "/api/v1/settings/jobs")
-        if not any(j.get("id") == params.job_id for j in jobs):
-            return out({"error": f"unknown job '{params.job_id}'",
+        if not any(j.get("id") == job_id for j in jobs):
+            return out({"error": f"unknown job '{job_id}'",
                         "valid": [j.get("id") for j in jobs]})
         r = await api("seerr", "POST",
-                      f"/api/v1/settings/jobs/{params.job_id}/schedule",
-                      body={"schedule": params.schedule})
+                      f"/api/v1/settings/jobs/{job_id}/schedule",
+                      body={"schedule": schedule})
         return out({"ok": True, "id": r.get("id"),
                     "schedule": r.get("cronSchedule"),
                     "nextRun": r.get("nextExecutionTime")})
@@ -475,7 +448,10 @@ async def job_set_schedule(params: JobScheduleInput) -> str:
 @mcp.tool(name="clankarr_stack_drift", annotations={
     "title": "Library-wide drift check", "readOnlyHint": True,
     "destructiveHint": False, "idempotentHint": True, "openWorldHint": True})
-async def stack_drift(params: DriftInput) -> str:
+async def stack_drift(
+    limit: Annotated[int, Field(ge=1, le=500,
+                                description="Max rows per category")] = 50,
+) -> str:
     """Find Seerr media marked available that the arrs or Jellyfin no
     longer have.
 
@@ -538,8 +514,8 @@ async def stack_drift(params: DriftInput) -> str:
             "seerrMediaRows": len(media),
             "movieDriftCount": len(movie_drift),
             "tvDriftCount": len(tv_drift),
-            "movies": movie_drift[:params.limit],
-            "tv": tv_drift[:params.limit],
+            "movies": movie_drift[:limit],
+            "tv": tv_drift[:limit],
             "fix": "clankarr_job_run('availability-sync')"})
     except Exception as e:
         return err(e)
