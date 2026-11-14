@@ -18,7 +18,7 @@ from pydantic import Field
 from starlette.responses import JSONResponse
 from starlette.types import ASGIApp, Receive, Scope, Send
 
-VERSION = "1.3.0"
+VERSION = "2.0.0"
 PORT = int(os.environ.get("CLANKARR_PORT", "8099"))
 TOKEN = os.environ.get("CLANKARR_TOKEN", "")
 CONFIG_DIR = os.environ.get("CLANKARR_CONFIG_DIR", "/config")

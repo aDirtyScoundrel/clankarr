@@ -20,14 +20,37 @@ the truth diverges between the four services.
 | `media_search` | Search Seerr for movies and shows by title. |
 | `media_status` | One title across Seerr, the arr, and Jellyfin, with a drift verdict. |
 | `request_list` | List Seerr requests, newest first. |
-| `request_create` | Request a movie or show. Refuses duplicates and available titles. |
+| `request_create` | Request a movie or show. Refuses duplicates and available titles. Optional quality profile. |
+| `request_approve` | Approve a pending request (through Seerr). |
+| `request_decline` | Decline a pending request. |
+| `request_retry` | Retry a failed request via Seerr. |
+| `request_delete` | Delete a request RECORD only. Never touches media or files. |
 | `jobs_list` | Seerr job schedules, next runs, and state. |
 | `job_run` | Run a Seerr job now. |
 | `job_set_schedule` | Change a job's cron schedule (6 fields, seconds first). |
 | `stack_drift` | Library-wide check for stale "available" entries. |
+| `stack_health` | One-call triage: arr health items, Seerr jobs, Jellyfin, NZBGet, drift. |
+| `queue_status` | Active downloads across Radarr, Sonarr and NZBGet. |
+| `download_history` | Grab/import/failure events for one title. |
+| `request_trace` | Walks Seerr → arr → queue → NZBGet → history and returns a verdict with a next step. |
+| `release_info` | File quality, resolution, codec, audio languages, size. TV per-season summary. |
+| `notifications_list` | Seerr notification agents, webhook URLs masked to host. |
+| `notifications_test` | Send a test notification through one agent. |
 
 Read tools are marked `readOnlyHint`. `request_create` triggers a download;
-the job tools change Seerr state. There are no delete tools.
+the job tools change Seerr state. clankarr is delete-free: no tool deletes
+media or files, and all request actions go through Seerr — it never
+bypasses the request system.
+
+## Why is my request stuck?
+
+Call `request_trace(media_type, tmdb_id)`. It walks the whole chain and
+returns one verdict: not-requested, not-in-arr, not-monitored,
+waiting-for-release, downloading, import-blocked, failed-download,
+waiting-for-import, available, or available-but-drifted — each with a
+suggested next step. `queue_status` and `download_history` give the raw
+views. NZBGet detail needs `NZBGET_USER` / `NZBGET_PASS` (below); without
+them the arr-side diagnosis still works.
 
 ## Requirements
 
@@ -50,6 +73,8 @@ the job tools change Seerr state. There are no delete tools.
 | `RADARR_URL` | `http://radarr:7878` | Radarr base URL. |
 | `SONARR_URL` | `http://sonarr:8989` | Sonarr base URL. |
 | `JELLYFIN_URL` | `http://jellyfin:8096` | Jellyfin base URL. |
+| `NZBGET_USER` | none | NZBGet username for read-only queue/history detail. Radarr's API masks the password, so credentials cannot be discovered from it. |
+| `NZBGET_PASS` | none | NZBGet password. Without both, NZBGet views degrade gracefully. |
 
 The default URLs assume container names on a shared Docker network. Point
 them at host addresses if your services live elsewhere.
