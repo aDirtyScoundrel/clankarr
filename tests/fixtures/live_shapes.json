@@ -1,0 +1,7099 @@
+{
+ "radarr_movie": {
+  "title": "The Bluff",
+  "originalTitle": "The Bluff",
+  "originalLanguage": {
+   "id": 1,
+   "name": "English"
+  },
+  "alternateTitles": [],
+  "secondaryYearSourceId": 0,
+  "sortTitle": "bluff",
+  "sizeOnDisk": 6375745428,
+  "status": "released",
+  "overview": "When her tranquil life on a remote island is shattered by the return of her vengeful former captain, a skilled ex-pirate must confront her bloody past and unleash her deadly talents to save her family from a ruthless siege.",
+  "digitalRelease": "2026-02-25T00:00:00Z",
+  "releaseDate": "2026-02-25T00:00:00Z",
+  "images": [
+   {
+    "coverType": "poster",
+    "url": "/MediaCover/11/poster.jpg?h=699686972f352e8c0aca",
+    "remoteUrl": "https://image.tmdb.org/t/p/original/dl1cA7wdwePc9QU2Rc24EPqlcyJ.jpg"
+   },
+   {
+    "coverType": "fanart",
+    "url": "/MediaCover/11/fanart.jpg?h=761548ba5e634a128af2",
+    "remoteUrl": "https://image.tmdb.org/t/p/original/rbFqLPKj6D2JyRh5mOfA7jqX0Qk.jpg"
+   }
+  ],
+  "website": "https://www.amazon.com/dp/B0G565KPS4",
+  "year": 2026,
+  "youTubeTrailerId": "uUYMqRjNxhM",
+  "studio": "AGBO",
+  "path": "/data/media/movies/The Bluff (2026)",
+  "qualityProfileId": 4,
+  "hasFile": true,
+  "movieFileId": 3,
+  "monitored": true,
+  "minimumAvailability": "released",
+  "isAvailable": true,
+  "folderName": "/data/media/movies/The Bluff (2026)",
+  "runtime": 103,
+  "cleanTitle": "thebluff",
+  "imdbId": "tt14181714",
+  "tmdbId": 799882,
+  "titleSlug": "799882",
+  "rootFolderPath": "/data/media/movies",
+  "certification": "R",
+  "genres": [
+   "Drama",
+   "Action",
+   "Thriller"
+  ],
+  "keywords": [
+   "19th century",
+   "bloody past",
+   "caribbean",
+   "caribbean sea",
+   "female pirate",
+   "hidden cove",
+   "island siege",
+   "loyal crew",
+   "old grudge",
+   "pirate",
+   "pirate revenge",
+   "quartermaster",
+   "running from the past",
+   "second in command",
+   "sister-in-law"
+  ],
+  "tags": [],
+  "added": "2026-02-26T16:07:42Z",
+  "ratings": {
+   "imdb": {
+    "votes": 20237,
+    "value": 5.8,
+    "type": "user"
+   },
+   "tmdb": {
+    "votes": 250,
+    "value": 6.7,
+    "type": "user"
+   },
+   "metacritic": {
+    "votes": 0,
+    "value": 61,
+    "type": "user"
+   },
+   "trakt": {
+    "votes": 3237,
+    "value": 6.54093,
+    "type": "user"
+   }
+  },
+  "movieFile": {
+   "movieId": 11,
+   "relativePath": "The.Bluff.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-FLUX.mkv",
+   "path": "/data/media/movies/The Bluff (2026)/The.Bluff.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-FLUX.mkv",
+   "size": 6375745428,
+   "dateAdded": "2026-02-26T16:09:00Z",
+   "sceneName": "The.Bluff.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-FLUX",
+   "releaseGroup": "FLUX",
+   "edition": "",
+   "languages": [
+    {
+     "id": 1,
+     "name": "English"
+    }
+   ],
+   "quality": {
+    "quality": {
+     "id": 3,
+     "name": "WEBDL-1080p",
+     "source": "webdl",
+     "resolution": 1080,
+     "modifier": "none"
+    },
+    "revision": {
+     "version": 1,
+     "real": 0,
+     "isRepack": false
+    }
+   },
+   "indexerFlags": 0,
+   "mediaInfo": {
+    "audioBitrate": 640000,
+    "audioChannels": 5.1,
+    "audioCodec": "EAC3",
+    "audioLanguages": "eng",
+    "audioStreamCount": 1,
+    "videoBitDepth": 8,
+    "videoBitrate": 7553161,
+    "videoCodec": "h264",
+    "videoFps": 24,
+    "videoDynamicRange": "",
+    "videoDynamicRangeType": "",
+    "resolution": "1920x800",
+    "runTime": "1:43:41",
+    "scanType": "Progressive",
+    "subtitles": "eng/eng/eng/ara/cat/cze/dan/ger/gre/spa/baq/fin/fre/glg/heb/hin/hun/ind/ita/jpn/kan/kor/mal/may/nob/dut/pol/por/por/rum/swe/tam/tel/tha/tur/chi/chi"
+   },
+   "originalFilePath": "The.Bluff.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-FLUX/The.Bluff.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-FLUX.mkv",
+   "qualityCutoffNotMet": false,
+   "id": 3
+  },
+  "popularity": 5.4763,
+  "lastSearchTime": "2026-02-26T16:07:42Z",
+  "statistics": {
+   "movieFileCount": 1,
+   "sizeOnDisk": 6375745428,
+   "releaseGroups": [
+    "FLUX"
+   ],
+   "movieFileQualities": [
+    {
+     "id": 3,
+     "name": "WEBDL-1080p",
+     "source": "webdl",
+     "resolution": 1080,
+     "modifier": "none"
+    }
+   ]
+  },
+  "id": 11
+ },
+ "radarr_queue": {
+  "page": 1,
+  "pageSize": 5,
+  "sortKey": "timeleft",
+  "sortDirection": "descending",
+  "totalRecords": 2,
+  "records": [
+   {
+    "movieId": 591,
+    "languages": [
+     {
+      "id": 4,
+      "name": "German"
+     },
+     {
+      "id": 1,
+      "name": "English"
+     }
+    ],
+    "quality": {
+     "quality": {
+      "id": 3,
+      "name": "WEBDL-1080p",
+      "source": "webdl",
+      "resolution": 1080,
+      "modifier": "none"
+     },
+     "revision": {
+      "version": 1,
+      "real": 0,
+      "isRepack": false
+     }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "size": 7411649321,
+    "title": "The.Mongoose.2026.GERMAN.DL.1080P.WEB.H264-WAYNE",
+    "estimatedCompletionTime": "2026-11-14T05:24:00Z",
+    "added": "2026-11-04T08:15:53Z",
+    "status": "completed",
+    "trackedDownloadStatus": "warning",
+    "trackedDownloadState": "importPending",
+    "statusMessages": [
+     {
+      "title": "The.Mongoose.2026.GERMAN.DL.1080P.WEB.H264-WAYNE",
+      "messages": [
+       "Found archive file, might need to be extracted"
+      ]
+     }
+    ],
+    "errorMessage": "PAR Status: NONE - Unpack Status: SUCCESS - Move Status: SUCCESS - Script Status: {scriptStatus} - Delete Status: NONE - Mark Status: NONE",
+    "downloadId": "f2bc9e0e3c0547238b91312e54fdfc6d",
+    "protocol": "usenet",
+    "downloadClient": "NZBGet",
+    "downloadClientHasPostImportCategory": false,
+    "indexer": "altHUB (Prowlarr)",
+    "outputPath": "/data/nzbget/completed/movies/The.Mongoose.2026.GERMAN.DL.1080P.WEB.H264-WAYNE",
+    "sizeleft": 0,
+    "timeleft": "00:00:00",
+    "id": 1420736981
+   },
+   {
+    "movieId": 470,
+    "languages": [
+     {
+      "id": 1,
+      "name": "English"
+     }
+    ],
+    "quality": {
+     "quality": {
+      "id": 3,
+      "name": "WEBDL-1080p",
+      "source": "webdl",
+      "resolution": 1080,
+      "modifier": "none"
+     },
+     "revision": {
+      "version": 1,
+      "real": 0,
+      "isRepack": false
+     }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "size": 6267352790,
+    "title": "Heart.of.the.Beast.2026.MULTI.1080p.WEB.H264-LOST",
+    "estimatedCompletionTime": "2026-11-14T05:24:00Z",
+    "added": "2026-11-10T00:02:09Z",
+    "status": "completed",
+    "trackedDownloadStatus": "warning",
+    "trackedDownloadState": "importPending",
+    "statusMessages": [
+     {
+      "title": "Heart.of.the.Beast.2026.MULTI.1080p.WEB.H264-LOST",
+      "messages": [
+       "Found archive file, might need to be extracted"
+      ]
+     }
+    ],
+    "errorMessage": "PAR Status: NONE - Unpack Status: SUCCESS - Move Status: SUCCESS - Script Status: {scriptStatus} - Delete Status: NONE - Mark Status: NONE",
+    "downloadId": "32382ec07934497386fd7b31231e3892",
+    "protocol": "usenet",
+    "downloadClient": "NZBGet",
+    "downloadClientHasPostImportCategory": false,
+    "indexer": "altHUB (Prowlarr)",
+    "outputPath": "/data/nzbget/completed/movies/Heart.of.the.Beast.2026.MULTI.1080p.WEB.H264-LOST",
+    "sizeleft": 0,
+    "timeleft": "00:00:00",
+    "id": 438928910
+   }
+  ]
+ },
+ "radarr_history": {
+  "page": 1,
+  "pageSize": 5,
+  "sortKey": "date",
+  "sortDirection": "descending",
+  "totalRecords": 1440,
+  "records": [
+   {
+    "movieId": 645,
+    "sourceTitle": "Fall.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-PiRaTeS",
+    "languages": [
+     {
+      "id": 1,
+      "name": "English"
+     }
+    ],
+    "quality": {
+     "quality": {
+      "id": 30,
+      "name": "Remux-1080p",
+      "source": "bluray",
+      "resolution": 1080,
+      "modifier": "remux"
+     },
+     "revision": {
+      "version": 1,
+      "real": 0,
+      "isRepack": false
+     }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-11-14T05:06:01Z",
+    "downloadId": "5b05e6f0697449268cbee3871c61368c",
+    "eventType": "downloadFolderImported",
+    "data": {
+     "fileId": "556",
+     "droppedPath": "/data/nzbget/completed/movies/Fall.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-PiRaTeS/Fall.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-PiRaTeS.mkv",
+     "importedPath": "/data/media/movies/Fall (2022)/Fall.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-PiRaTeS.mkv",
+     "downloadClient": "NZBGet",
+     "downloadClientName": "NZBGet",
+     "releaseGroup": "PiRaTeS",
+     "customFormatScore": "0",
+     "size": "23620829147",
+     "indexerFlags": "0"
+    },
+    "id": 1580
+   },
+   {
+    "movieId": 644,
+    "sourceTitle": "Pet.Sematary.1989.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-EPSiLON",
+    "languages": [
+     {
+      "id": 1,
+      "name": "English"
+     }
+    ],
+    "quality": {
+     "quality": {
+      "id": 30,
+      "name": "Remux-1080p",
+      "source": "bluray",
+      "resolution": 1080,
+      "modifier": "remux"
+     },
+     "revision": {
+      "version": 1,
+      "real": 0,
+      "isRepack": false
+     }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-11-14T04:53:02Z",
+    "downloadId": "142100920a774cf8896b46a4d6b316ae",
+    "eventType": "downloadFolderImported",
+    "data": {
+     "fileId": "555",
+     "droppedPath": "/data/nzbget/completed/movies/Pet.Sematary.1989.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-EPSiLON/Pet.Sematary.1989.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-EPSiLON.mkv",
+     "importedPath": "/data/media/movies/Pet Sematary (1989)/Pet.Sematary.1989.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-EPSiLON.mkv",
+     "downloadClient": "NZBGet",
+     "downloadClientName": "NZBGet",
+     "releaseGroup": "EPSiLON",
+     "customFormatScore": "0",
+     "size": "28815895638",
+     "indexerFlags": "0"
+    },
+    "id": 1579
+   },
+   {
+    "movieId": 643,
+    "sourceTitle": "Coco.2017.BluRay.1080p.DTS-HD.MA.7.1.AVC.REMUX-FraMeSToR",
+    "languages": [
+     {
+      "id": 1,
+      "name": "English"
+     }
+    ],
+    "quality": {
+     "quality": {
+      "id": 30,
+      "name": "Remux-1080p",
+      "source": "bluray",
+      "resolution": 1080,
+      "modifier": "remux"
+     },
+     "revision": {
+      "version": 1,
+      "real": 0,
+      "isRepack": false
+     }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-11-14T04:47:02Z",
+    "downloadId": "467af292866e4550937aa74c2e09f7cc",
+    "eventType": "downloadFolderImported",
+    "data": {
+     "fileId": "554",
+     "droppedPath": "/data/nzbget/completed/movies/Coco.2017.BluRay.1080p.DTS-HD.MA.7.1.AVC.REMUX-FraMeSToR/Coco.2017.BluRay.1080p.DTS-HD.MA.7.1.AVC.REMUX-FraMeSToR.mkv",
+     "importedPath": "/data/media/movies/Coco (2017)/Coco.2017.BluRay.1080p.DTS-HD.MA.7.1.AVC.REMUX-FraMeSToR.mkv",
+     "downloadClient": "NZBGet",
+     "downloadClientName": "NZBGet",
+     "releaseGroup": "FraMeSToR",
+     "customFormatScore": "0",
+     "size": "23091971895",
+     "indexerFlags": "0"
+    },
+    "id": 1578
+   },
+   {
+    "movieId": 645,
+    "sourceTitle": "Fall.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-PiRaTeS",
+    "languages": [
+     {
+      "id": 1,
+      "name": "English"
+     }
+    ],
+    "quality": {
+     "quality": {
+      "id": 30,
+      "name": "Remux-1080p",
+      "source": "bluray",
+      "resolution": 1080,
+      "modifier": "remux"
+     },
+     "revision": {
+      "version": 1,
+      "real": 0,
+      "isRepack": false
+     }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-11-14T04:39:49Z",
+    "downloadId": "5b05e6f0697449268cbee3871c61368c",
+    "eventType": "grabbed",
+    "data": {
+     "indexer": "NZBgeek (Prowlarr)",
+     "nzbInfoUrl": "https://nzbgeek.info/geekseek.php?guid=ddbe0ed7f89b1795646258a9e86de95e",
+     "releaseGroup": "PiRaTeS",
+     "age": "1490",
+     "ageHours": "35764.87412680936",
+     "ageMinutes": "2145892.4476087284",
+     "publishedDate": "2022-10-15T23:47:23Z",
+     "downloadClient": "NZBGet",
+     "downloadClientName": "NZBGet",
+     "size": "24846634000",
+     "downloadUrl": "http://prowlarr:9696/1/download?apikey=4bb7723455ea459f9128895318af9ef6&link=a3FMUlk4Ujl0ZkpiVWErRDZOQ3JRZmpScmpQTVJlbUZYSlNNdDcwOThhVSt4SXdkdDJOK3hnemF6Z0w1aXJLV0dlYld0OWhCM0V4N3h1SmNBRVpNaTZXY09TcUEyVUVBRG5mL2R6OVFjRU05MGREOWFNMlNQanRlQmNXeWFaNld5anAvcG1KSituenBJY3dWbUZTQnZlZXJKVENGQ2NTak1LSTVEVTdFQ3FrPQ&file=Fall.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-PiRaTeS",
+     "guid": "https://nzbgeek.info/geekseek.php?guid=ddbe0ed7f89b1795646258a9e86de95e",
+     "tmdbId": "0",
+     "imdbId": "15325794",
+     "protocol": "1",
+     "customFormatScore": "0",
+     "movieMatchType": "Id",
+     "releaseSource": "Search",
+     "indexerFlags": "0",
+     "indexerId": "1"
+    },
+    "id": 1577
+   },
+   {
+    "movieId": 644,
+    "sourceTitle": "Pet.Sematary.1989.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-EPSiLON",
+    "languages": [
+     {
+      "id": 1,
+      "name": "English"
+     }
+    ],
+    "quality": {
+     "quality": {
+      "id": 30,
+      "name": "Remux-1080p",
+      "source": "bluray",
+      "resolution": 1080,
+      "modifier": "remux"
+     },
+     "revision": {
+      "version": 1,
+      "real": 0,
+      "isRepack": false
+     }
+    },
+    "customFormats": [],
+    "customFormatScore": 0,
+    "qualityCutoffNotMet": false,
+    "date": "2026-11-14T04:39:46Z",
+    "downloadId": "142100920a774cf8896b46a4d6b316ae",
+    "eventType": "grabbed",
+    "data": {
+     "indexer": "DrunkenSlug (Prowlarr)",
+     "nzbInfoUrl": "https://drunkenslug.com/details/6cd2e7ad1e5e3dada1a635ebae1dd49718bb3a27",
+     "releaseGroup": "EPSiLON",
+     "age": "1905",
+     "ageHours": "45723.31773839961",
+     "ageMinutes": "2743399.064304135",
+     "publishedDate": "2021-08-27T01:20:43Z",
+     "downloadClient": "NZBGet",
+     "downloadClientName": "NZBGet",
+     "size": "31219124347",
+     "downloadUrl": "http://prowlarr:9696/5/download?apikey=4bb7723455ea459f9128895318af9ef6&link=QThFemFOU3hSTSs0eFViWEIrbFU0TmxCUkdocTBsY0IyNnhmQlJoY1U5WVZYSXZoMjVUZ1djUWovSUg1aDZveTg5N254dHVuR01JV0xkMlk3VHhVR0t6NzJsL3c1dTdlK2xiQ2xNZTZjUXF2eDdlRnRuZkxYV0NxRlNtQTg0MjFDdVpyS0IyMWxROWxIak5xMjNRNFhOL2tVMjFKQ2Iydjc2NTlsTElabFU1VElub2t1eVF6VUhPbzJ1cnRzTm1t&file=Pet.Sematary.1989.1080p.BluRay.REMUX.AVC.DTS-HD.MA.5.1-EPSiLON",
+     "guid": "https://drunkenslug.com/details/6cd2e7ad1e5e3dada1a635ebae1dd49718bb3a27",
+     "tmdbId": "0",
+     "imdbId": "98084",
+     "protocol": "1",
+     "customFormatScore": "0",
+     "movieMatchType": "Id",
+     "releaseSource": "Search",
+     "indexerFlags": "0",
+     "indexerId": "5"
+    },
+    "id": 1576
+   }
+  ]
+ },
+ "radarr_health": [
+  {
+   "source": "AllowedHostsCheck",
+   "type": "warning",
+   "message": "Allowed Hosts is not configured, Radarr will accept requests for any hostname. Set Allowed Hosts in General settings to restrict which hostnames can be used to reach Radarr.",
+   "wikiUrl": "https://wiki.servarr.com/radarr/system#allowed-hosts-not-configured"
+  }
+ ],
+ "radarr_downloadclient": [
+  {
+   "enable": true,
+   "protocol": "usenet",
+   "priority": 1,
+   "removeCompletedDownloads": true,
+   "removeFailedDownloads": true,
+   "name": "NZBGet",
+   "fields": [
+    {
+     "order": 0,
+     "name": "host",
+     "label": "Host",
+     "value": "10.0.0.1",
+     "type": "textbox",
+     "advanced": false,
+     "privacy": "normal",
+     "isFloat": false
+    },
+    {
+     "order": 1,
+     "name": "port",
+     "label": "Port",
+     "value": 6789,
+     "type": "textbox",
+     "advanced": false,
+     "privacy": "normal",
+     "isFloat": false
+    },
+    {
+     "order": 2,
+     "name": "useSsl",
+     "label": "Use SSL",
+     "helpText": "Use secure connection when connection to NZBGet",
+     "value": false,
+     "type": "checkbox",
+     "advanced": false,
+     "privacy": "normal",
+     "isFloat": false
+    },
+    {
+     "order": 3,
+     "name": "urlBase",
+     "label": "URL Base",
+     "helpText": "Adds a prefix to the NZBGet url, such as http://[host]:[port]/[urlBase]/jsonrpc",
+     "type": "textbox",
+     "advanced": true,
+     "privacy": "normal",
+     "isFloat": false
+    },
+    {
+     "order": 4,
+     "name": "username",
+     "label": "Username",
+     "value": "nzbget",
+     "type": "textbox",
+     "advanced": false,
+     "privacy": "userName",
+     "isFloat": false
+    },
+    {
+     "order": 5,
+     "name": "password",
+     "label": "Password",
+     "value": "********",
+     "type": "password",
+     "advanced": false,
+     "privacy": "password",
+     "isFloat": false
+    },
+    {
+     "order": 6,
+     "name": "movieCategory",
+     "label": "Category",
+     "helpText": "Adding a category specific to Radarr avoids conflicts with unrelated non-Radarr downloads. Using a category is optional, but strongly recommended.",
+     "value": "movies",
+     "type": "textbox",
+     "advanced": false,
+     "privacy": "normal",
+     "isFloat": false
+    },
+    {
+     "order": 7,
+     "name": "recentMoviePriority",
+     "label": "Recent Priority",
+     "helpText": "Priority to use when grabbing movies that aired within the last 21 days",
+     "value": 0,
+     "type": "select",
+     "advanced": false,
+     "selectOptions": [
+      {
+       "value": -100,
+       "name": "VeryLow",
+       "order": -100,
+       "dividerAfter": false
+      },
+      {
+       "value": -50,
+       "name": "Low",
+       "order": -50,
+       "dividerAfter": false
+      },
+      {
+       "value": 0,
+       "name": "Normal",
+       "order": 0,
+       "dividerAfter": false
+      },
+      {
+       "value": 50,
+       "name": "High",
+       "order": 50,
+       "dividerAfter": false
+      },
+      {
+       "value": 100,
+       "name": "VeryHigh",
+       "order": 100,
+       "dividerAfter": false
+      },
+      {
+       "value": 900,
+       "name": "Force",
+       "order": 900,
+       "dividerAfter": false
+      }
+     ],
+     "privacy": "normal",
+     "isFloat": false
+    },
+    {
+     "order": 8,
+     "name": "olderMoviePriority",
+     "label": "Older Priority",
+     "helpText": "Priority to use when grabbing movies that aired over 21 days ago",
+     "value": 0,
+     "type": "select",
+     "advanced": false,
+     "selectOptions": [
+      {
+       "value": -100,
+       "name": "VeryLow",
+       "order": -100,
+       "dividerAfter": false
+      },
+      {
+       "value": -50,
+       "name": "Low",
+       "order": -50,
+       "dividerAfter": false
+      },
+      {
+       "value": 0,
+       "name": "Normal",
+       "order": 0,
+       "dividerAfter": false
+      },
+      {
+       "value": 50,
+       "name": "High",
+       "order": 50,
+       "dividerAfter": false
+      },
+      {
+       "value": 100,
+       "name": "VeryHigh",
+       "order": 100,
+       "dividerAfter": false
+      },
+      {
+       "value": 900,
+       "name": "Force",
+       "order": 900,
+       "dividerAfter": false
+      }
+     ],
+     "privacy": "normal",
+     "isFloat": false
+    },
+    {
+     "order": 9,
+     "name": "addPaused",
+     "label": "Add Paused",
+     "helpText": "This option requires at least NzbGet version 16.0",
+     "value": false,
+     "type": "checkbox",
+     "advanced": false,
+     "privacy": "normal",
+     "isFloat": false
+    }
+   ],
+   "implementationName": "NZBGet",
+   "implementation": "Nzbget",
+   "configContract": "NzbgetSettings",
+   "infoLink": "https://wiki.servarr.com/radarr/supported#nzbget",
+   "tags": [],
+   "id": 1
+  }
+ ],
+ "seerr_media": {
+  "id": 131631,
+  "adult": false,
+  "budget": 125000000,
+  "genres": [
+   {
+    "id": 878,
+    "name": "Science Fiction"
+   },
+   {
+    "id": 12,
+    "name": "Adventure"
+   },
+   {
+    "id": 53,
+    "name": "Thriller"
+   }
+  ],
+  "relatedVideos": [
+   {
+    "site": "YouTube",
+    "key": "rlx6Et9UhUw",
+    "name": "Peeta's Message For The People Of Panem",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=rlx6Et9UhUw"
+   },
+   {
+    "site": "YouTube",
+    "key": "wnDeqBMKRp4",
+    "name": "Katniss Wakes Up In District 13",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=wnDeqBMKRp4"
+   },
+   {
+    "site": "YouTube",
+    "key": "vZPzZ_NEwEQ",
+    "name": "Katniss Sings 'The Hanging Tree' | The Hunger Games: Mockingjay Part 1",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=vZPzZ_NEwEQ"
+   },
+   {
+    "site": "YouTube",
+    "key": "pHrrBuUKm_E",
+    "name": "The Hunger Games: Mockingjay Part 1 (Jennifer Lawrence) \u2013 Official Fourth Clip",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=pHrrBuUKm_E"
+   },
+   {
+    "site": "YouTube",
+    "key": "8PkUv8B5qpA",
+    "name": "The Hunger Games: Mockingjay Part 1 (Jennifer Lawrence) \u2013 Official Third Clip",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=8PkUv8B5qpA"
+   },
+   {
+    "site": "YouTube",
+    "key": "tCHoA9fjhbw",
+    "name": "The Hunger Games: Mockingjay Part 1 (Jennifer Lawrence) \u2013 Official Second Clip",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=tCHoA9fjhbw"
+   },
+   {
+    "site": "YouTube",
+    "key": "nkplvnYfeIQ",
+    "name": "The Hunger Games: Mockingjay Part 1 (Jennifer Lawrence) \u2013 Official First Clip",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=nkplvnYfeIQ"
+   },
+   {
+    "site": "YouTube",
+    "key": "IXshQ5mv1K8",
+    "name": "Final Trailer \u2013 \u201cBurn\u201d",
+    "size": 1080,
+    "type": "Trailer",
+    "url": "https://www.youtube.com/watch?v=IXshQ5mv1K8"
+   },
+   {
+    "site": "YouTube",
+    "key": "ap-oyOh8u7g",
+    "name": "CapitolTV Presents 'DISTRICT VOICES' - All-New Series!",
+    "size": 1080,
+    "type": "Featurette",
+    "url": "https://www.youtube.com/watch?v=ap-oyOh8u7g"
+   },
+   {
+    "site": "YouTube",
+    "key": "t6srDbQqlss",
+    "name": "The Hunger Games: Mockingjay Part 1 (Jennifer Lawrence) - \u201cReturn to District 12\u201d",
+    "size": 1080,
+    "type": "Clip",
+    "url": "https://www.youtube.com/watch?v=t6srDbQqlss"
+   },
+   {
+    "site": "YouTube",
+    "key": "QnoXecGpq6g",
+    "name": "Lorde - Yellow Flicker Beat (Music Video)",
+    "size": 1080,
+    "type": "Featurette",
+    "url": "https://www.youtube.com/watch?v=QnoXecGpq6g"
+   },
+   {
+    "site": "YouTube",
+    "key": "C_Tsj_wTJkQ",
+    "name": "\u201cThe Mockingjay Lives\u201d Official Trailer",
+    "size": 1080,
+    "type": "Trailer",
+    "url": "https://www.youtube.com/watch?v=C_Tsj_wTJkQ"
+   },
+   {
+    "site": "YouTube",
+    "key": "kHu6yvH_6LU",
+    "name": "\u201cTomorrow\u201d Trailer Countdown",
+    "size": 1080,
+    "type": "Teaser",
+    "url": "https://www.youtube.com/watch?v=kHu6yvH_6LU"
+   },
+   {
+    "site": "YouTube",
+    "key": "yy8h3kNdcmo",
+    "name": "\"5 Days\u201d Trailer Countdown",
+    "size": 1080,
+    "type": "Teaser",
+    "url": "https://www.youtube.com/watch?v=yy8h3kNdcmo"
+   },
+   {
+    "site": "YouTube",
+    "key": "JzcYyzCZdiM",
+    "name": "Teaser Trailer",
+    "size": 1080,
+    "type": "Trailer",
+    "url": "https://www.youtube.com/watch?v=JzcYyzCZdiM"
+   }
+  ],
+  "originalLanguage": "en",
+  "originalTitle": "The Hunger Games: Mockingjay - Part 1",
+  "popularity": 33.1617,
+  "productionCompanies": [
+   {
+    "id": 1632,
+    "name": "Lionsgate",
+    "originCountry": "US",
+    "logoPath": "/cisLn1YAUuptXVBa0xjq7ST9cH0.png"
+   },
+   {
+    "id": 5420,
+    "name": "Color Force",
+    "originCountry": "US",
+    "logoPath": "/dlW4Kh5dNieKNURnymsu57y6fMf.png"
+   }
+  ],
+  "productionCountries": [
+   {
+    "iso_3166_1": "US",
+    "name": "United States of America"
+   }
+  ],
+  "releaseDate": "2014-11-19",
+  "releases": {
+   "results": [
+    {
+     "iso_3166_1": "AR",
+     "release_dates": [
+      {
+       "certification": "+13",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "Reestreno",
+       "release_date": "2026-10-16T00:00:00.000Z",
+       "type": 2
+      },
+      {
+       "certification": "+13",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "AT",
+     "release_dates": [
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 4
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "AU",
+     "release_dates": [
+      {
+       "certification": "M",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "BE",
+     "release_dates": [
+      {
+       "certification": "16",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "BG",
+     "release_dates": [
+      {
+       "certification": "C",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "BR",
+     "release_dates": [
+      {
+       "certification": "14",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      },
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "Maratona (relan\u00e7amento)",
+       "release_date": "2026-10-15T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "CA",
+     "release_dates": [
+      {
+       "certification": "PG",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "CH",
+     "release_dates": [
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "14 (recommended age)",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "CZ",
+     "release_dates": [
+      {
+       "certification": "15+",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      },
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2015-03-25T00:00:00.000Z",
+       "type": 5
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "DE",
+     "release_dates": [
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      },
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "Re-release",
+       "release_date": "2026-10-22T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "DK",
+     "release_dates": [
+      {
+       "certification": "11",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "EE",
+     "release_dates": [
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "ES",
+     "release_dates": [
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "es",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "FR",
+     "release_dates": [
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "fr",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      },
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "fr",
+       "note": "Prime Video",
+       "release_date": "2021-06-08T00:00:00.000Z",
+       "type": 4
+      },
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "VOD",
+       "release_date": "2015-03-19T00:00:00.000Z",
+       "type": 4
+      },
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "fr",
+       "note": "DVD & Blu-Ray",
+       "release_date": "2015-03-19T00:00:00.000Z",
+       "type": 5
+      },
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "fr",
+       "note": "Cin\u00e9+ Premier",
+       "release_date": "2019-03-07T00:00:00.000Z",
+       "type": 6
+      },
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "fr",
+       "note": "TMC",
+       "release_date": "2025-11-17T00:00:00.000Z",
+       "type": 6
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "GB",
+     "release_dates": [
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-10T00:00:00.000Z",
+       "type": 1
+      },
+      {
+       "certification": "12A",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "GR",
+     "release_dates": [
+      {
+       "certification": "\u039a-12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      },
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "DVD, Blu-ray",
+       "release_date": "2015-03-27T00:00:00.000Z",
+       "type": 5
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "HK",
+     "release_dates": [
+      {
+       "certification": "IIA",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "HU",
+     "release_dates": [
+      {
+       "certification": "16",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "IE",
+     "release_dates": [
+      {
+       "certification": "12A",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "IL",
+     "release_dates": [
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "IT",
+     "release_dates": [
+      {
+       "certification": "T",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "JP",
+     "release_dates": [
+      {
+       "certification": "G",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2015-06-05T00:00:00.000Z",
+       "type": 4
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "KR",
+     "release_dates": [
+      {
+       "certification": "15",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "LT",
+     "release_dates": [
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "MX",
+     "release_dates": [
+      {
+       "certification": "B",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "NL",
+     "release_dates": [
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      },
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "DVD, Blu ray",
+       "release_date": "2015-03-19T00:00:00.000Z",
+       "type": 5
+      },
+      {
+       "certification": "12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "SBS 6",
+       "release_date": "2017-01-27T00:00:00.000Z",
+       "type": 6
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "NZ",
+     "release_dates": [
+      {
+       "certification": "M",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "PL",
+     "release_dates": [
+      {
+       "certification": "16",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "PT",
+     "release_dates": [
+      {
+       "certification": "M/12",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "RO",
+     "release_dates": [
+      {
+       "certification": "15",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 4
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "RU",
+     "release_dates": [
+      {
+       "certification": "12+",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "SE",
+     "release_dates": [
+      {
+       "certification": "11",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "SI",
+     "release_dates": [
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-19T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "SK",
+     "release_dates": [
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "en",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "TH",
+     "release_dates": [
+      {
+       "certification": "\u0e19 15+ ",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "TR",
+     "release_dates": [
+      {
+       "certification": "13+",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "Re-release",
+       "release_date": "2026-06-12T00:00:00.000Z",
+       "type": 2
+      },
+      {
+       "certification": "PG-13",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "UA",
+     "release_dates": [
+      {
+       "certification": "PG-13",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "US",
+     "release_dates": [
+      {
+       "certification": "PG-13",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-21T00:00:00.000Z",
+       "type": 3
+      },
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "in Netflix",
+       "release_date": "2026-07-18T00:00:00.000Z",
+       "type": 4
+      },
+      {
+       "certification": "PG-13",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "Starz",
+       "release_date": "2023-12-01T00:00:00.000Z",
+       "type": 4
+      }
+     ]
+    },
+    {
+     "iso_3166_1": "VN",
+     "release_dates": [
+      {
+       "certification": "",
+       "descriptors": [],
+       "iso_639_1": "",
+       "note": "",
+       "release_date": "2014-11-20T00:00:00.000Z",
+       "type": 3
+      }
+     ]
+    }
+   ]
+  },
+  "revenue": 755356711,
+  "spokenLanguages": [
+   {
+    "english_name": "English",
+    "iso_639_1": "en",
+    "name": "English"
+   }
+  ],
+  "status": "Released",
+  "title": "The Hunger Games: Mockingjay - Part 1",
+  "video": false,
+  "voteAverage": 6.815,
+  "voteCount": 17229,
+  "backdropPath": "/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
+  "homepage": "http://www.thehungergames.movie/",
+  "imdbId": "tt1951265",
+  "overview": "After surviving the Quarter Quell, Katniss finds herself in the hidden stronghold of District 13, where the rebellion against the Capitol is gaining momentum. Struggling with the weight of becoming the symbol of resistance, she must navigate fragile alliances while trying to protect those she loves. As propaganda battles rage and Panem moves closer to full-scale war, Katniss is forced to confront the true cost of revolution.",
+  "posterPath": "/meSGXQ8MXqiC8bXxkKu7lPqnu0L.jpg",
+  "runtime": 123,
+  "tagline": "Fire burns brighter in the darkness.",
+  "credits": {
+   "cast": [
+    {
+     "castId": 2,
+     "character": "Katniss Everdeen",
+     "creditId": "52fe4b7bc3a368484e18b057",
+     "id": 72129,
+     "name": "Jennifer Lawrence",
+     "order": 0,
+     "gender": 1,
+     "profilePath": "/6WTY6HjXMGxnHilJRVC3eLnu43F.jpg"
+    },
+    {
+     "castId": 3,
+     "character": "Peeta Mellark",
+     "creditId": "52fe4b7bc3a368484e18b05b",
+     "id": 27972,
+     "name": "Josh Hutcherson",
+     "order": 1,
+     "gender": 2,
+     "profilePath": "/f0eosZ1Fx0VBUyspq8K2f8sUSBn.jpg"
+    },
+    {
+     "castId": 4,
+     "character": "Gale Hawthorne",
+     "creditId": "52fe4b7bc3a368484e18b05f",
+     "id": 96066,
+     "name": "Liam Hemsworth",
+     "order": 2,
+     "gender": 2,
+     "profilePath": "/7UIm9RoBnlqS1uLlbElAY8urdWD.jpg"
+    },
+    {
+     "castId": 5,
+     "character": "Haymitch Abernathy",
+     "creditId": "52fe4b7bc3a368484e18b063",
+     "id": 57755,
+     "name": "Woody Harrelson",
+     "order": 3,
+     "gender": 2,
+     "profilePath": "/igxYDQBbTEdAqaJxaW6ffqswmUU.jpg"
+    },
+    {
+     "castId": 19,
+     "character": "Effie Trinket",
+     "creditId": "545f74100e0a2661770015de",
+     "id": 9281,
+     "name": "Elizabeth Banks",
+     "order": 4,
+     "gender": 1,
+     "profilePath": "/hQ7IwCQjlpsBPSpnnjjhH3rjwSJ.jpg"
+    },
+    {
+     "castId": 8,
+     "character": "President Alma Coin",
+     "creditId": "52fe4b7bc3a368484e18b06f",
+     "id": 1231,
+     "name": "Julianne Moore",
+     "order": 5,
+     "gender": 1,
+     "profilePath": "/AlL6a3s7m8hVfPJzeRXPQU1wTZj.jpg"
+    },
+    {
+     "castId": 11,
+     "character": "Plutarch Heavensbee",
+     "creditId": "52fe4b7bc3a368484e18b07b",
+     "id": 1233,
+     "name": "Philip Seymour Hoffman",
+     "order": 6,
+     "gender": 2,
+     "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg"
+    },
+    {
+     "castId": 20,
+     "character": "Beetee Latier",
+     "creditId": "545f74270e0a264d6000216f",
+     "id": 2954,
+     "name": "Jeffrey Wright",
+     "order": 7,
+     "gender": 2,
+     "profilePath": "/yGcuHGW4glqRpOPxgiCvjcren7F.jpg"
+    },
+    {
+     "castId": 21,
+     "character": "Caesar Flickerman",
+     "creditId": "545f743cc3a3686e49001e36",
+     "id": 2283,
+     "name": "Stanley Tucci",
+     "order": 8,
+     "gender": 2,
+     "profilePath": "/q4TanMDI5Rgsvw4SfyNbPBh4URr.jpg"
+    },
+    {
+     "castId": 22,
+     "character": "President Coriolanus Snow",
+     "creditId": "545f744cc3a3680b5d0006ae",
+     "id": 55636,
+     "name": "Donald Sutherland",
+     "order": 9,
+     "gender": 2,
+     "profilePath": "/t9rN5Vni7GYmqqNi9nANCZbmewx.jpg"
+    },
+    {
+     "castId": 24,
+     "character": "Primrose Everdeen",
+     "creditId": "545f74710e0a264d60002178",
+     "id": 530025,
+     "name": "Willow Shields",
+     "order": 10,
+     "gender": 1,
+     "profilePath": "/gd4OIdARNyUj2gaecAEZNdHflgM.jpg"
+    },
+    {
+     "castId": 7,
+     "character": "Finnick Odair",
+     "creditId": "52fe4b7bc3a368484e18b06b",
+     "id": 237455,
+     "name": "Sam Claflin",
+     "order": 11,
+     "gender": 2,
+     "profilePath": "/e5CU4tjCNZFfm7ITmZfzjZse2Bb.jpg"
+    },
+    {
+     "castId": 25,
+     "character": "Johanna Mason",
+     "creditId": "545f74880e0a261fb300924a",
+     "id": 20089,
+     "name": "Jena Malone",
+     "order": 12,
+     "gender": 1,
+     "profilePath": "/kGwV9iLmfUxJ6a73ehr0QvAnc8C.jpg"
+    },
+    {
+     "castId": 14,
+     "character": "Boggs",
+     "creditId": "52fe4b7bc3a368484e18b087",
+     "id": 932967,
+     "name": "Mahershala Ali",
+     "order": 13,
+     "gender": 2,
+     "profilePath": "/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg"
+    },
+    {
+     "castId": 30,
+     "character": "Cressida",
+     "creditId": "545f750b0e0a261fb9009122",
+     "id": 58502,
+     "name": "Natalie Dormer",
+     "order": 14,
+     "gender": 1,
+     "profilePath": "/vvl6bi59rQhoTjNZMHyRUX9zXLU.jpg"
+    },
+    {
+     "castId": 15,
+     "character": "Castor",
+     "creditId": "52fe4b7bc3a368484e18b08b",
+     "id": 51682,
+     "name": "Wes Chatham",
+     "order": 15,
+     "gender": 2,
+     "profilePath": "/lFoUyX8FZs3XvUWWItCm2ezvAEs.jpg"
+    },
+    {
+     "castId": 12,
+     "character": "Pollux",
+     "creditId": "52fe4b7bc3a368484e18b07f",
+     "id": 20220,
+     "name": "Elden Henson",
+     "order": 16,
+     "gender": 2,
+     "profilePath": "/8U5g30U76UJe0erbJdWjGLVz7NF.jpg"
+    },
+    {
+     "castId": 26,
+     "character": "Commander Paylor",
+     "creditId": "545f74b70e0a261fb300924d",
+     "id": 1366702,
+     "name": "Patina Miller",
+     "order": 17,
+     "gender": 1,
+     "profilePath": "/mNYsr2FsjPiFGhzxAOxXJNoYZG5.jpg"
+    },
+    {
+     "castId": 10,
+     "character": "Messalla",
+     "creditId": "52fe4b7bc3a368484e18b077",
+     "id": 94103,
+     "name": "Evan Ross",
+     "order": 18,
+     "gender": 2,
+     "profilePath": "/95rr0S5zC6csxoZdFAvv4Wzo4gg.jpg"
+    },
+    {
+     "castId": 39,
+     "character": "Asterid Everdeen",
+     "creditId": "54f8e16392514118ee00008e",
+     "id": 47533,
+     "name": "Paula Malcomson",
+     "order": 19,
+     "gender": 1,
+     "profilePath": "/9lJy6ze86ZfVcBcyBK9UZq8FJiC.jpg"
+    },
+    {
+     "castId": 40,
+     "character": "Egeria",
+     "creditId": "54f8e1ca92514118ff0000a6",
+     "id": 20275,
+     "name": "Sarita Choudhury",
+     "order": 20,
+     "gender": 1,
+     "profilePath": "/kBONPmppdMUElp0PhCgCNgkeWit.jpg"
+    },
+    {
+     "castId": 13,
+     "character": "Annie Cresta",
+     "creditId": "52fe4b7bc3a368484e18b083",
+     "id": 1085158,
+     "name": "Stef Dawson",
+     "order": 21,
+     "gender": 1,
+     "profilePath": "/aZqmCROxhL78kxFRhfY4sefku7h.jpg"
+    },
+    {
+     "castId": 6,
+     "character": "Antonius",
+     "creditId": "52fe4b7bc3a368484e18b067",
+     "id": 17343,
+     "name": "Robert Knepper",
+     "order": 22,
+     "gender": 2,
+     "profilePath": "/lRncjvgCIm1muIkK94zJSH2i3d6.jpg"
+    },
+    {
+     "castId": 41,
+     "character": "D8 Another Patient",
+     "creditId": "54f8e223c3a36843e50000aa",
+     "id": 1435440,
+     "name": "Caitlin Fowler",
+     "order": 23,
+     "gender": 1,
+     "profilePath": "/rhQ4xUMtdwpiD0gcQDyUtzm0tkN.jpg"
+    },
+    {
+     "castId": 42,
+     "character": "D8 Female Patient",
+     "creditId": "54f8e24dc3a36843df0000ab",
+     "id": 1435442,
+     "name": "Jada Taylor",
+     "order": 24,
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "castId": 43,
+     "character": "D8 Male Patient",
+     "creditId": "54f8e359c3a36843eb0000b4",
+     "id": 13028,
+     "name": "Nicholas Pryor",
+     "order": 25,
+     "gender": 2,
+     "profilePath": "/rAqLXW7s72tSgl1XBRYRCjQg4Cq.jpg"
+    },
+    {
+     "castId": 44,
+     "character": "D8 Old Woman",
+     "creditId": "54f8e389c3a36843f10000c6",
+     "id": 582892,
+     "name": "Donna Biscoe",
+     "order": 26,
+     "gender": 1,
+     "profilePath": "/97GlC40sehUgcIkbtDbrcCerlw.jpg"
+    },
+    {
+     "castId": 27,
+     "character": "Eddy",
+     "creditId": "545f74d9c3a36841d30026f8",
+     "id": 1383546,
+     "name": "Michael Garza",
+     "order": 27,
+     "gender": 2,
+     "profilePath": "/pwQLs87GfuQKfMuYxvRejTkdl1F.jpg"
+    },
+    {
+     "castId": 28,
+     "character": "Coriolanus Snow's Granddaughter",
+     "creditId": "545f74eec3a3680b5d0006c2",
+     "id": 1383509,
+     "name": "Erika Bierman",
+     "order": 28,
+     "gender": 1,
+     "profilePath": "/wybvA7195Lbn5rhJAsQRfwWRbao.jpg"
+    },
+    {
+     "castId": 181,
+     "character": "Rescue Hovercraft Pilot",
+     "creditId": "57bea962c3a3682155003873",
+     "id": 1542923,
+     "name": "Jenique Bennett",
+     "order": 29,
+     "gender": 1,
+     "profilePath": "/ofV8UMdocjvj3ZBIn9NnTLgjRRS.jpg"
+    },
+    {
+     "castId": 182,
+     "character": "D13 Systems Operator #1",
+     "creditId": "57bea976c3a36838d9002ac2",
+     "id": 52483,
+     "name": "Rus Blackwell",
+     "order": 30,
+     "gender": 2,
+     "profilePath": "/hdWVrpvBpgUZimK5XiGU999SOY7.jpg"
+    },
+    {
+     "castId": 185,
+     "character": "D13 Systems Operator #2",
+     "creditId": "57beaba89251414fad002a9a",
+     "id": 155077,
+     "name": "Stevie Ray Dallimore",
+     "order": 31,
+     "gender": 2,
+     "profilePath": "/xThcZPkoq18Z6Z3kFZqb3U7IVtJ.jpg"
+    },
+    {
+     "castId": 183,
+     "character": "D13 Systems Operator #3",
+     "creditId": "57bea9e89251413dae00332e",
+     "id": 1669939,
+     "name": "Breann Couch",
+     "order": 32,
+     "gender": 1,
+     "profilePath": "/r1N0TmwbuAieg6yECIaChWPC6ui.jpg"
+    },
+    {
+     "castId": 192,
+     "character": "Coriolanus Snow's Stylist #1",
+     "creditId": "58dbd35492514133b900c921",
+     "id": 1375356,
+     "name": "Jordan Woods-Robinson",
+     "order": 33,
+     "gender": 2,
+     "profilePath": "/tjPFHZpjL2LbC6vgO4vI6wwGK4E.jpg"
+    },
+    {
+     "castId": 193,
+     "character": "Orderly",
+     "creditId": "58dbd576c3a3687cfb00c6f8",
+     "id": 1785980,
+     "name": "Katie Sawhill",
+     "order": 34,
+     "gender": 0,
+     "profilePath": "/dkVvVFVx18HquvBE8vEGLxeI9ro.jpg"
+    },
+    {
+     "castId": 215,
+     "character": "Bunker Door Security",
+     "creditId": "5cd88afec3a3684a97c21c80",
+     "id": 2311329,
+     "name": "Jackson Mizell",
+     "order": 35,
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "castId": 194,
+     "character": "Pilot #1",
+     "creditId": "58dbdd52c3a3682511000a06",
+     "id": 1785995,
+     "name": "Charles Kronmuller",
+     "order": 36,
+     "gender": 0,
+     "profilePath": "/lfJ2g2gdhtt0rOwwijBfYE5yiYy.jpg"
+    },
+    {
+     "castId": 180,
+     "character": "District 13 Citizen",
+     "creditId": "579ac5cfc3a3687e66003b0b",
+     "id": 1383482,
+     "name": "Jennifer Cocker",
+     "order": 37,
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "castId": 36,
+     "character": "District 13 Citizen",
+     "creditId": "545f75850e0a262359001ccf",
+     "id": 1383552,
+     "name": "Marshall Choka",
+     "order": 38,
+     "gender": 2,
+     "profilePath": "/pfay3eOywbI5sELpnOrA51BZD1J.jpg"
+    },
+    {
+     "castId": 32,
+     "character": "President Snow's Security",
+     "creditId": "545f752d0e0a262359001cb6",
+     "id": 1383549,
+     "name": "Tyler Lee Allen",
+     "order": 39,
+     "gender": 2,
+     "profilePath": "/qqrVmsqzbJdop0Dns8Xan2j2esd.jpg"
+    },
+    {
+     "castId": 184,
+     "character": "District 8 Hospital Patient (uncredited)",
+     "creditId": "57beaa7ac3a36821090037ba",
+     "id": 1669940,
+     "name": "Jasmine Ahnie",
+     "order": 40,
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "castId": 186,
+     "character": "District 13 Citizen (uncredited)",
+     "creditId": "57bead6fc3a3682109003962",
+     "id": 1163715,
+     "name": "Brayden Patterson",
+     "order": 41,
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "castId": 187,
+     "character": "District 13 Citizen (uncredited)",
+     "creditId": "57beadb1c3a36838d9002c99",
+     "id": 1669941,
+     "name": "Emma Elle Roberts",
+     "order": 42,
+     "gender": 1,
+     "profilePath": "/2w1AetbenarsfkzasDJy58LxnMe.jpg"
+    },
+    {
+     "castId": 198,
+     "character": "District 13 Citizen (uncredited)",
+     "creditId": "58dbdfff92514133d100d7a2",
+     "id": 1786007,
+     "name": "Molly Evensen",
+     "order": 43,
+     "gender": 1,
+     "profilePath": "/8PIVFVSZRyVsgCBRvxucFXAQUqj.jpg"
+    },
+    {
+     "castId": 197,
+     "character": "District 5 Rebel (uncredited)",
+     "creditId": "58dbdeb192514133b900d0af",
+     "id": 1528216,
+     "name": "William Frasca",
+     "order": 44,
+     "gender": 2,
+     "profilePath": "/uklbKBjGhm9FXmHWd6NJ1n6Cv7A.jpg"
+    },
+    {
+     "castId": 196,
+     "character": "Peacekeeper (uncredited)",
+     "creditId": "58dbde15c3a3682531000ab6",
+     "id": 1785996,
+     "name": "Joe Crosson",
+     "order": 45,
+     "gender": 2,
+     "profilePath": "/npA2WAe88QClLGtw2LtMWsIL8yA.jpg"
+    },
+    {
+     "castId": 199,
+     "character": "Peacekeeper (uncredited)",
+     "creditId": "58dbe0abc3a3682511000ce7",
+     "id": 1383478,
+     "name": "Gregory Fears",
+     "order": 46,
+     "gender": 0,
+     "profilePath": "/eYmWGZCgl9AKOJxagGTOQqYTtf6.jpg"
+    },
+    {
+     "castId": 223,
+     "character": "District 8 Hospital Helper (uncredited)",
+     "creditId": "5ebeed2a15a4a1001d9e3790",
+     "id": 2389778,
+     "name": "Charles White Jr.",
+     "order": 47,
+     "gender": 2,
+     "profilePath": "/lbTiqXD3lBXpYya2REQP9cVXLVc.jpg"
+    },
+    {
+     "castId": 225,
+     "character": "District 8 Amputee (uncredited)",
+     "creditId": "5f89a1a9a13533003512bccf",
+     "id": 1658200,
+     "name": "Angel Giuffria",
+     "order": 48,
+     "gender": 1,
+     "profilePath": "/fDSuO4F60tFglSqysYGP0dm7fBR.jpg"
+    },
+    {
+     "castId": 229,
+     "character": "District 13 Citizen (uncredited)",
+     "creditId": "6194acac0d9f5a0065307a5b",
+     "id": 3313040,
+     "name": "Ryan DeLaney",
+     "order": 49,
+     "gender": 2,
+     "profilePath": null
+    }
+   ],
+   "crew": [
+    {
+     "creditId": "52fe4b7bc3a368484e18b053",
+     "department": "Writing",
+     "id": 189111,
+     "job": "Novel",
+     "name": "Suzanne Collins",
+     "gender": 1,
+     "profilePath": "/weOQf4FEiI72G5mA0mK1gZk8H6M.jpg"
+    },
+    {
+     "creditId": "64e672b106f984014e676841",
+     "department": "Crew",
+     "id": 4230717,
+     "job": "Stand In",
+     "name": "Christopher Kelly",
+     "gender": 0,
+     "profilePath": "/5pcAFXdTsSxSfnvvGRhjOI0iADI.jpg"
+    },
+    {
+     "creditId": "60f730c8d7fbda002fb5e33b",
+     "department": "Costume & Make-Up",
+     "id": 2627086,
+     "job": "Costume Design",
+     "name": "Bart Mueller",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "60f730beaf58cb005e530e0c",
+     "department": "Costume & Make-Up",
+     "id": 2627085,
+     "job": "Costume Design",
+     "name": "Kurt Swanson",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "64e90d72594c9400e25fcc30",
+     "department": "Crew",
+     "id": 2783515,
+     "job": "Set Production Assistant",
+     "name": "Riley Flanagan",
+     "gender": 2,
+     "profilePath": "/gCmn5R9MNSiiyYF8aw7Qv16w6uM.jpg"
+    },
+    {
+     "creditId": "5300bbc39251416ade3196b4",
+     "department": "Directing",
+     "id": 10943,
+     "job": "Director",
+     "name": "Francis Lawrence",
+     "gender": 2,
+     "profilePath": "/pyGWo5mAwZ2Koe6leB2RjKd7vmc.jpg"
+    },
+    {
+     "creditId": "5300bbdb9251416adb31b4c6",
+     "department": "Writing",
+     "id": 35550,
+     "job": "Screenplay",
+     "name": "Danny Strong",
+     "gender": 2,
+     "profilePath": "/82C6hgzdpHUHizMfedNAP7DSGOj.jpg"
+    },
+    {
+     "creditId": "616383049603310062bcebc6",
+     "department": "Costume & Make-Up",
+     "id": 2099943,
+     "job": "Makeup Artist",
+     "name": "Corinna Woodcock",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a98b1c3a3684872001153",
+     "department": "Art",
+     "id": 986677,
+     "job": "Art Direction",
+     "name": "Steve Summersgill",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa4adc3a36848740012b3",
+     "department": "Art",
+     "id": 1401884,
+     "job": "Sculptor",
+     "name": "Yann Denoual",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a96c7c3a3684886001230",
+     "department": "Editing",
+     "id": 66519,
+     "job": "Editor",
+     "name": "Alan Edward Bell",
+     "gender": 2,
+     "profilePath": "/7RmPHkOeYzfr12kSIK8DrL5kRlA.jpg"
+    },
+    {
+     "creditId": "550a9a9e92514146a0001034",
+     "department": "Costume & Make-Up",
+     "id": 1412310,
+     "job": "Hairstylist",
+     "name": "Vincent Gideon",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9b43c3a3684877001012",
+     "department": "Costume & Make-Up",
+     "id": 1435575,
+     "job": "Hairstylist",
+     "name": "Colette Slattery",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa4d5c3a3681db2000eff",
+     "department": "Art",
+     "id": 1442128,
+     "job": "Sculptor",
+     "name": "Christine Mahuna",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a98e2c3a3684874001175",
+     "department": "Art",
+     "id": 21984,
+     "job": "Set Decoration",
+     "name": "Larry Dias",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9f80c3a368487400123d",
+     "department": "Art",
+     "id": 1442114,
+     "job": "Art Department Coordinator",
+     "name": "Lo\u00efc Chavanon",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa0a392514146930012de",
+     "department": "Art",
+     "id": 1442116,
+     "job": "Art Department Coordinator",
+     "name": "Wylie Griffin",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a965e92514146930011d8",
+     "department": "Production",
+     "id": 4446,
+     "job": "Producer",
+     "name": "Jon Kilik",
+     "gender": 2,
+     "profilePath": "/gxNOHTVIUSACPZzNzcyi50SViid.jpg"
+    },
+    {
+     "creditId": "550a9ae3c3a3681db2000e0e",
+     "department": "Costume & Make-Up",
+     "id": 587804,
+     "job": "Hairstylist",
+     "name": "Valeska Schitthelm",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9bc1c3a368487d0010de",
+     "department": "Costume & Make-Up",
+     "id": 406204,
+     "job": "Makeup Department Head",
+     "name": "Ve Neill",
+     "gender": 1,
+     "profilePath": "/gNYwxuK5Z7Nr3tWtSWv0qAueUIs.jpg"
+    },
+    {
+     "creditId": "550a97e6c3a3684877000fbc",
+     "department": "Production",
+     "id": 495,
+     "job": "Casting",
+     "name": "Debra Zane",
+     "gender": 1,
+     "profilePath": "/wiJJU7vSHNsW5HFkz2WX38Wg5xH.jpg"
+    },
+    {
+     "creditId": "550a986f9251414695001053",
+     "department": "Art",
+     "id": 41592,
+     "job": "Art Direction",
+     "name": "Andrew Max Cahn",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9b03c3a36848800010ab",
+     "department": "Costume & Make-Up",
+     "id": 1338670,
+     "job": "Hairstylist",
+     "name": "Joy Zapata",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9c57925141469c0010e7",
+     "department": "Costume & Make-Up",
+     "id": 1182917,
+     "job": "Makeup Artist",
+     "name": "Ann-Maree Hurley",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9642c3a368487d001042",
+     "department": "Production",
+     "id": 935634,
+     "job": "Producer",
+     "name": "Nina Jacobson",
+     "gender": 1,
+     "profilePath": "/sfgag0cl150pHNjnqCUoq81NnRs.jpg"
+    },
+    {
+     "creditId": "550aa575c3a368487d0011d2",
+     "department": "Art",
+     "id": 935503,
+     "job": "Set Designer",
+     "name": "Al Hobbs",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa4eb925141469c0011b7",
+     "department": "Art",
+     "id": 1403915,
+     "job": "Sculptor",
+     "name": "Robert Makolies",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa0fcc3a368487200123f",
+     "department": "Art",
+     "id": 1442119,
+     "job": "Assistant Art Director",
+     "name": "Justin O'Neal Miller",
+     "gender": 2,
+     "profilePath": "/gWA8ux6oe027BOdfOE8nIuj9raG.jpg"
+    },
+    {
+     "creditId": "550aa5fa92514146910011a0",
+     "department": "Art",
+     "id": 1068056,
+     "job": "Set Designer",
+     "name": "Easton Michael Smith",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a988392514146a0000ffe",
+     "department": "Art",
+     "id": 38022,
+     "job": "Art Direction",
+     "name": "Lauren E. Polizzi",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a961f925141469100104e",
+     "department": "Writing",
+     "id": 225633,
+     "job": "Screenplay",
+     "name": "Peter Craig",
+     "gender": 2,
+     "profilePath": "/5r0nnz5JJ8bIiUfcK2TaasmJm3h.jpg"
+    },
+    {
+     "creditId": "550a96dec3a3684877000fa1",
+     "department": "Editing",
+     "id": 69229,
+     "job": "Editor",
+     "name": "Mark Yoshikawa",
+     "gender": 2,
+     "profilePath": "/sKR8Cfcs6I0hMmMjML2rqIem7k5.jpg"
+    },
+    {
+     "creditId": "550a985a925141469300120a",
+     "department": "Art",
+     "id": 1890,
+     "job": "Production Design",
+     "name": "Philip Messina",
+     "gender": 2,
+     "profilePath": "/kSIeS5fyRFTG4GSdzTK5iMdoc7h.jpg"
+    },
+    {
+     "creditId": "550a96b09251414695001026",
+     "department": "Camera",
+     "id": 27576,
+     "job": "Director of Photography",
+     "name": "Jo Willems",
+     "gender": 2,
+     "profilePath": "/emzbBrf72LrFWMMYAMKIkNLsBF6.jpg"
+    },
+    {
+     "creditId": "550a9a6d9251414695001096",
+     "department": "Costume & Make-Up",
+     "id": 1442097,
+     "job": "Hairstylist",
+     "name": "Jeri Baker",
+     "gender": 0,
+     "profilePath": "/pq0iClsSEYKHp0M1gB5DDqNnk90.jpg"
+    },
+    {
+     "creditId": "550aa123c3a368487d001167",
+     "department": "Art",
+     "id": 1293581,
+     "job": "Assistant Art Director",
+     "name": "Bradley Rubin",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa5a5925141469900106d",
+     "department": "Art",
+     "id": 1400555,
+     "job": "Set Designer",
+     "name": "George Lee",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aabb7925141467e0010dd",
+     "department": "Crew",
+     "id": 1428904,
+     "job": "Visual Effects Editor",
+     "name": "Liana Jackson",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab097c3a36848770011f0",
+     "department": "Lighting",
+     "id": 1399475,
+     "job": "Gaffer",
+     "name": "Christopher Prampin",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab572c3a368488300134a",
+     "department": "Directing",
+     "id": 1341865,
+     "job": "Script Supervisor",
+     "name": "Ana Maria Quintana",
+     "gender": 1,
+     "profilePath": "/kOwMpvilYZUIstFGiPWmjqLcdIx.jpg"
+    },
+    {
+     "creditId": "550ab598925141467e001199",
+     "department": "Crew",
+     "id": 1442173,
+     "job": "Dialect Coach",
+     "name": "Rick Lipton",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9c129251414693001282",
+     "department": "Costume & Make-Up",
+     "id": 95142,
+     "job": "Makeup Department Head",
+     "name": "Nikoletta Skarlatos",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa0c4c3a368488600133a",
+     "department": "Art",
+     "id": 1442117,
+     "job": "Assistant Art Director",
+     "name": "Sean Ryan Jennings",
+     "gender": 2,
+     "profilePath": "/umAm5n6T1QHP4DS5EWDZEiSq1qj.jpg"
+    },
+    {
+     "creditId": "550aa383925141469900102b",
+     "department": "Art",
+     "id": 1442125,
+     "job": "Construction Coordinator",
+     "name": "Dierk Grahlow",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa4109251414699001045",
+     "department": "Art",
+     "id": 1442126,
+     "job": "Greensman",
+     "name": "T.J. Rottenberg",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa55d9251414699001062",
+     "department": "Art",
+     "id": 1068055,
+     "job": "Set Designer",
+     "name": "Jim Hewitt",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa5bbc3a3681db2000f1e",
+     "department": "Art",
+     "id": 1442129,
+     "job": "Set Designer",
+     "name": "E. Aaron Linker",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aadba9251414693001411",
+     "department": "Visual Effects",
+     "id": 1442151,
+     "job": "Visual Effects Supervisor",
+     "name": "Bj\u00f6rn Mayer",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aae02925141469900112c",
+     "department": "Visual Effects",
+     "id": 1442154,
+     "job": "Visual Effects Supervisor",
+     "name": "Patric Roos",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9c42925141469c0010e3",
+     "department": "Costume & Make-Up",
+     "id": 1404805,
+     "job": "Makeup Artist",
+     "name": "Conor McCullagh",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9fe7c3a368488300116e",
+     "department": "Crew",
+     "id": 1442115,
+     "job": "Property Master",
+     "name": "Till Sennhenn",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa6c29251414693001377",
+     "department": "Art",
+     "id": 1442130,
+     "job": "Set Decoration Buyer",
+     "name": "Nane Cornelius",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa86fc3a36848720012e8",
+     "department": "Sound",
+     "id": 1380479,
+     "job": "Sound Designer",
+     "name": "Jeremy Peirson",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaa70925141469c001229",
+     "department": "Visual Effects",
+     "id": 1442137,
+     "job": "Animation Supervisor",
+     "name": "Catherine Mullan",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aab0b92514146930013ce",
+     "department": "Crew",
+     "id": 1442139,
+     "job": "Visual Effects Editor",
+     "name": "Andrew Edmondson",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aad59c3a3684880001220",
+     "department": "Visual Effects",
+     "id": 1442148,
+     "job": "Visual Effects Supervisor",
+     "name": "Charles Gibson",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab029925141469c0012ad",
+     "department": "Camera",
+     "id": 1377132,
+     "job": "Camera Operator",
+     "name": "David Luckenbach",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aac10c3a3684886001423",
+     "department": "Visual Effects",
+     "id": 1394750,
+     "job": "Visual Effects Producer",
+     "name": "Thomas Nittmann",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aad75c3a3681db2000fb8",
+     "department": "Visual Effects",
+     "id": 1442150,
+     "job": "Visual Effects Supervisor",
+     "name": "Jay Grunfeld",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaf4cc3a368488000125f",
+     "department": "Crew",
+     "id": 1442162,
+     "job": "Stunt Coordinator",
+     "name": "Ralf H\u00e4ger",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa961c3a3684874001317",
+     "department": "Crew",
+     "id": 1408342,
+     "job": "CG Supervisor",
+     "name": "Votch Levi",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aac4192514146930013e9",
+     "department": "Crew",
+     "id": 1442143,
+     "job": "Visual Effects Editor",
+     "name": "Tom Reagan",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aae21925141469300141c",
+     "department": "Visual Effects",
+     "id": 1442156,
+     "job": "Visual Effects Supervisor",
+     "name": "David Seager",
+     "gender": 2,
+     "profilePath": "/cmKmW4Ei3vCHc52PqFpjzxZmTfr.jpg"
+    },
+    {
+     "creditId": "550aa005c3a3681db2000e8c",
+     "department": "Crew",
+     "id": 1377290,
+     "job": "Property Master",
+     "name": "Frank Pitussi",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa0e0925141467e001023",
+     "department": "Art",
+     "id": 1442118,
+     "job": "Assistant Art Director",
+     "name": "Alice Leconte",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaa0c92514146930013b7",
+     "department": "Crew",
+     "id": 1442136,
+     "job": "CG Supervisor",
+     "name": "Gunther Schatz",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aae4c925141469100123b",
+     "department": "Visual Effects",
+     "id": 1394755,
+     "job": "Visual Effects Supervisor",
+     "name": "Edson Williams",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab129925141469c0012bd",
+     "department": "Lighting",
+     "id": 1406844,
+     "job": "Gaffer",
+     "name": "Jean-Fran\u00e7ois Drigeard",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550a9a8792514146910010a6",
+     "department": "Costume & Make-Up",
+     "id": 1424894,
+     "job": "Hairstylist",
+     "name": "Camille Friend",
+     "gender": 1,
+     "profilePath": "/uxjRQbthSxupPUfVsO8pyqolOpI.jpg"
+    },
+    {
+     "creditId": "550a9fb4c3a3684872001216",
+     "department": "Art",
+     "id": 40754,
+     "job": "Art Department Coordinator",
+     "name": "Roxy Konrad",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa9d79251414689001466",
+     "department": "Crew",
+     "id": 1417988,
+     "job": "CG Supervisor",
+     "name": "Jorge Razon",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab359c3a3684877001229",
+     "department": "Costume & Make-Up",
+     "id": 1415019,
+     "job": "Set Costumer",
+     "name": "Shayne Allen Duhon",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab441925141469c001311",
+     "department": "Costume & Make-Up",
+     "id": 1335886,
+     "job": "Costume Supervisor",
+     "name": "Meike Schlegel",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab505c3a36848800012d9",
+     "department": "Crew",
+     "id": 1442172,
+     "job": "Picture Car Coordinator",
+     "name": "Charles Heidet",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab640c3a368488300135c",
+     "department": "Production",
+     "id": 1411357,
+     "job": "Location Manager",
+     "name": "Klaus Gro\u00dfe Darrelmann",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa7d7925141469300138f",
+     "department": "Sound",
+     "id": 1404366,
+     "job": "ADR & Dubbing",
+     "name": "Thomas Jones",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa88c925141469c00120a",
+     "department": "Sound",
+     "id": 1360099,
+     "job": "Sound Effects Editor",
+     "name": "Lee Gilmore",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aab4f9251414695001217",
+     "department": "Visual Effects",
+     "id": 1133287,
+     "job": "Visual Effects Producer",
+     "name": "Jennifer Fairweather",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aac63925141467e0010e3",
+     "department": "Visual Effects",
+     "id": 1442145,
+     "job": "Visual Effects Producer",
+     "name": "Matthew Silverman",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aad8dc3a3684874001374",
+     "department": "Visual Effects",
+     "id": 1408321,
+     "job": "Visual Effects Supervisor",
+     "name": "Jonathan Harb",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaf79925141469c00129e",
+     "department": "Crew",
+     "id": 14771,
+     "job": "Stunt Coordinator",
+     "name": "R.A. Rondell",
+     "gender": 2,
+     "profilePath": "/wTRVhxhcVIruSGFR8PfIgRZUzDR.jpg"
+    },
+    {
+     "creditId": "550ab0019251414699001163",
+     "department": "Camera",
+     "id": 1411340,
+     "job": "Camera Operator",
+     "name": "S\u00f6nke Hansen",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab18f9251414695001291",
+     "department": "Camera",
+     "id": 1403415,
+     "job": "Helicopter Camera",
+     "name": "David B. Nowell",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aab6f925141469c00123f",
+     "department": "Visual Effects",
+     "id": 1442142,
+     "job": "Visual Effects Producer",
+     "name": "Walter Garcia",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aac8bc3a3684880001211",
+     "department": "Visual Effects",
+     "id": 1408338,
+     "job": "Visual Effects Producer",
+     "name": "Melinka Thompson-Godoy",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab0469251414691001276",
+     "department": "Camera",
+     "id": 1442164,
+     "job": "Camera Operator",
+     "name": "Josh Medak",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab309c3a3681db2001027",
+     "department": "Costume & Make-Up",
+     "id": 1399320,
+     "job": "Set Costumer",
+     "name": "Valentina Aulisi",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab4cc92514146910012dc",
+     "department": "Crew",
+     "id": 1406850,
+     "job": "Transportation Coordinator",
+     "name": "Maxime Couteret",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa635c3a36848720012b2",
+     "department": "Art",
+     "id": 1411509,
+     "job": "Set Designer",
+     "name": "Jane Wuu",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa930925141468900145d",
+     "department": "Crew",
+     "id": 1442132,
+     "job": "CG Supervisor",
+     "name": "Christopher Downs",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaddf9251414695001247",
+     "department": "Visual Effects",
+     "id": 1368851,
+     "job": "Visual Effects Supervisor",
+     "name": "Darren Poe",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab47d92514146910012d3",
+     "department": "Sound",
+     "id": 1342663,
+     "job": "Music Editor",
+     "name": "David Olson",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab607c3a3684883001353",
+     "department": "Production",
+     "id": 1433917,
+     "job": "Location Manager",
+     "name": "Ken Lavet",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa490c3a36848740012ad",
+     "department": "Art",
+     "id": 1442127,
+     "job": "Sculptor",
+     "name": "Jonathan Burdeshaw",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aab9c92514146930013da",
+     "department": "Crew",
+     "id": 1406761,
+     "job": "Visual Effects Editor",
+     "name": "Dhuha Isa",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab161c3a3684877001202",
+     "department": "Camera",
+     "id": 1399071,
+     "job": "Helicopter Camera",
+     "name": "Hans Bjerno",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa354c3a36848830011c1",
+     "department": "Art",
+     "id": 1339445,
+     "job": "Construction Coordinator",
+     "name": "Chris Snyder",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa522c3a36848740012c2",
+     "department": "Art",
+     "id": 1399290,
+     "job": "Set Designer",
+     "name": "Ernie Avila",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa544c3a36848740012c8",
+     "department": "Art",
+     "id": 8281,
+     "job": "Set Designer",
+     "name": "Robert Fechtman",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa5dec3a36848720012aa",
+     "department": "Art",
+     "id": 1411330,
+     "job": "Set Designer",
+     "name": "Stephanie Rass",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa6159251414693001368",
+     "department": "Art",
+     "id": 9025,
+     "job": "Set Designer",
+     "name": "James E. Tocci",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa8dd92514146910011dc",
+     "department": "Crew",
+     "id": 1311507,
+     "job": "Special Effects Coordinator",
+     "name": "Steve Cremin",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaad992514146930013c7",
+     "department": "Visual Effects",
+     "id": 1431059,
+     "job": "Visual Effects Producer",
+     "name": "Sumriti Bhogal",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaca292514146990010ff",
+     "department": "Visual Effects",
+     "id": 1442146,
+     "job": "Visual Effects Producer",
+     "name": "Richard Thwaites",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab10e92514146890014f5",
+     "department": "Camera",
+     "id": 1395281,
+     "job": "Camera Operator",
+     "name": "Bob Gorelick",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aad26c3a368488000121a",
+     "department": "Visual Effects",
+     "id": 1442147,
+     "job": "Visual Effects Supervisor",
+     "name": "Adrian De Wet",
+     "gender": 2,
+     "profilePath": "/16zNz3cVoVVz5tRTH9NbttkbzkT.jpg"
+    },
+    {
+     "creditId": "550aaea1c3a368488000123a",
+     "department": "Visual Effects",
+     "id": 1442159,
+     "job": "VFX Production Coordinator",
+     "name": "Seda Yilmaz",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aaefa9251414695001258",
+     "department": "Visual Effects",
+     "id": 1442161,
+     "job": "VFX Supervisor",
+     "name": "Mihaela Orzea",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa8bcc3a3684877001132",
+     "department": "Sound",
+     "id": 1380479,
+     "job": "Sound Re-Recording Mixer",
+     "name": "Jeremy Peirson",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aa9a4c3a3684877001142",
+     "department": "Crew",
+     "id": 1442134,
+     "job": "CG Supervisor",
+     "name": "Mahmoud Rahnama",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550aabd8c3a3684874001349",
+     "department": "Crew",
+     "id": 1421648,
+     "job": "Visual Effects Editor",
+     "name": "Sam Lane",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab08192514146890014e3",
+     "department": "Lighting",
+     "id": 1380000,
+     "job": "Gaffer",
+     "name": "Helmut Prein",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab32cc3a368487d001313",
+     "department": "Costume & Make-Up",
+     "id": 1387256,
+     "job": "Set Costumer",
+     "name": "Tiffany Busche",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab381925141469300149b",
+     "department": "Costume & Make-Up",
+     "id": 1409281,
+     "job": "Set Costumer",
+     "name": "Scott R. Hankins",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab3b4c3a368487d001324",
+     "department": "Costume & Make-Up",
+     "id": 1345613,
+     "job": "Set Costumer",
+     "name": "Melanie Mascioli",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab662c3a3684883001360",
+     "department": "Crew",
+     "id": 1332189,
+     "job": "Dialect Coach",
+     "name": "William Conacher",
+     "gender": 2,
+     "profilePath": "/bfJ7yNTlNPFTE8FlqD94adqslD7.jpg"
+    },
+    {
+     "creditId": "550ab69a92514146930014e7",
+     "department": "Crew",
+     "id": 1415650,
+     "job": "Unit Publicist",
+     "name": "Will Casey",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab267c3a36848740013ec",
+     "department": "Costume & Make-Up",
+     "id": 9493,
+     "job": "Costume Supervisor",
+     "name": "Mark Peterson",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab1abc3a368488600149e",
+     "department": "Camera",
+     "id": 1424696,
+     "job": "Steadicam Operator",
+     "name": "David J. Thompson",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab212925141469900119a",
+     "department": "Camera",
+     "id": 1392245,
+     "job": "Still Photographer",
+     "name": "Murray Close",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab403925141469c001304",
+     "department": "Costume & Make-Up",
+     "id": 1442170,
+     "job": "Set Costumer",
+     "name": "Kendra L. Patterson",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab4e2c3a36848800012d6",
+     "department": "Crew",
+     "id": 1335890,
+     "job": "Transportation Coordinator",
+     "name": "Florian Haeger",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab623c3a3681db2001064",
+     "department": "Production",
+     "id": 1377300,
+     "job": "Location Manager",
+     "name": "Arnaud Kaiser",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab4a6c3a3684877001241",
+     "department": "Crew",
+     "id": 1357070,
+     "job": "Transportation Coordinator",
+     "name": "Denny Caira",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab6c592514146930014ef",
+     "department": "Production",
+     "id": 1442175,
+     "job": "Location Manager",
+     "name": "Mac Gordon",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550ab67ac3a368487400144d",
+     "department": "Production",
+     "id": 1442174,
+     "job": "Location Manager",
+     "name": "Anna L. Coats",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "550b4f379251414693002267",
+     "department": "Crew",
+     "id": 1233,
+     "job": "Thanks",
+     "name": "Philip Seymour Hoffman",
+     "gender": 2,
+     "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg"
+    },
+    {
+     "creditId": "632c0ddbc8f3c4007e74c570",
+     "department": "Crew",
+     "id": 1635216,
+     "job": "Stunts",
+     "name": "Christopher C. Padilla",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "6566293c89d97f0138fefc4a",
+     "department": "Sound",
+     "id": 1452131,
+     "job": "Songs",
+     "name": "Lorde",
+     "gender": 1,
+     "profilePath": "/pM9Y8C470KDnMb2AoHebfdru75e.jpg"
+    },
+    {
+     "creditId": "634ddd9689f7490082e2071c",
+     "department": "Crew",
+     "id": 1458401,
+     "job": "Stunts",
+     "name": "Laurie Singer",
+     "gender": 1,
+     "profilePath": "/1BUDLyazOlE3qTiKYVeVcCW6bEV.jpg"
+    },
+    {
+     "creditId": "634dde06d100b6007f94896d",
+     "department": "Crew",
+     "id": 2255727,
+     "job": "Stunts",
+     "name": "Becky Ohmes",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634dde65459ad6007afe6be6",
+     "department": "Crew",
+     "id": 2683479,
+     "job": "Stunts",
+     "name": "Maggie Macdonald",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634ddf791750510079d6ac27",
+     "department": "Crew",
+     "id": 1869061,
+     "job": "Stunts",
+     "name": "Sarah Reagin Clemmensen",
+     "gender": 1,
+     "profilePath": "/btDWbkVeDo2qmk71Iab33aTN9q5.jpg"
+    },
+    {
+     "creditId": "634dddc9af58cb007ddd310e",
+     "department": "Crew",
+     "id": 2568160,
+     "job": "Stunts",
+     "name": "Theresa Pink",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634dddda389da10079e60212",
+     "department": "Crew",
+     "id": 3745369,
+     "job": "Stunts",
+     "name": "Julie Pinault",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634ddf3512eb89007a4ce7a4",
+     "department": "Crew",
+     "id": 1378150,
+     "job": "Stunts",
+     "name": "Elizabeth Davidovich",
+     "gender": 1,
+     "profilePath": "/jmMh7gJWTZJYSnkjdmT89RkXrMr.jpg"
+    },
+    {
+     "creditId": "634ddd67d100b6007a51c60a",
+     "department": "Crew",
+     "id": 2463201,
+     "job": "Stunts",
+     "name": "Ashley Rae Riddick",
+     "gender": 1,
+     "profilePath": "/gzxHmRJcFOxDWQvTTrPj0Di68eb.jpg"
+    },
+    {
+     "creditId": "634dddaec9044c0091a3d8da",
+     "department": "Crew",
+     "id": 1711856,
+     "job": "Stunts",
+     "name": "Maya Santandrea",
+     "gender": 1,
+     "profilePath": "/zPWqVw9Kje3BvqnQb9qpnpeRJeL.jpg"
+    },
+    {
+     "creditId": "634ddf1ad100b60082f3ead5",
+     "department": "Crew",
+     "id": 102744,
+     "job": "Stunts",
+     "name": "Monique Ganderton",
+     "gender": 1,
+     "profilePath": "/kBhk7VQr42ge3g5iuLXsbpgWeIa.jpg"
+    },
+    {
+     "creditId": "634ddfaaaf58cb007ddd316e",
+     "department": "Crew",
+     "id": 1670734,
+     "job": "Stunts",
+     "name": "Sybille Blouin",
+     "gender": 1,
+     "profilePath": "/boPdjyVmW86ltpSUjKrilRKptHN.jpg"
+    },
+    {
+     "creditId": "634dde4bc9044c007a6a92ec",
+     "department": "Crew",
+     "id": 1825161,
+     "job": "Stunts",
+     "name": "Jessica Merideth",
+     "gender": 1,
+     "profilePath": "/om3KVsWZMfHElwSer6TqjAU6LYA.jpg"
+    },
+    {
+     "creditId": "634ddf5012eb89007d1fb2ca",
+     "department": "Crew",
+     "id": 1635197,
+     "job": "Stunts",
+     "name": "Marcelle Coletti",
+     "gender": 1,
+     "profilePath": "/kB2gdH6GACUF7hOz1xc85NlBUh4.jpg"
+    },
+    {
+     "creditId": "634ddd4f89f749007ae188c8",
+     "department": "Crew",
+     "id": 1456720,
+     "job": "Stunts",
+     "name": "Amy Lynn Tuttle",
+     "gender": 1,
+     "profilePath": "/vIkSxYLCDjE6KhYK9UDK0MP7Rav.jpg"
+    },
+    {
+     "creditId": "634dde37e263bb009c504a9f",
+     "department": "Crew",
+     "id": 1768007,
+     "job": "Stunt Double",
+     "name": "Renae Moneymaker",
+     "gender": 1,
+     "profilePath": "/k96lYjDhLJbhIDLjmxcOxCcHumW.jpg"
+    },
+    {
+     "creditId": "634dde8be263bb009c504ab1",
+     "department": "Crew",
+     "id": 2747096,
+     "job": "Stunts",
+     "name": "Aby Martin",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634ddd7c389da10081cdf2dc",
+     "department": "Crew",
+     "id": 2881844,
+     "job": "Stunts",
+     "name": "H\u00e9l\u00e8ne Tran",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634dde9e9af17100826a2f54",
+     "department": "Crew",
+     "id": 2647109,
+     "job": "Stunts",
+     "name": "Marion Levavasseur",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634ddeb612eb890082c563d7",
+     "department": "Crew",
+     "id": 1683245,
+     "job": "Stunts",
+     "name": "Karin Justman",
+     "gender": 1,
+     "profilePath": "/5s016pH1Uw7M3HivoLncZTH4bCy.jpg"
+    },
+    {
+     "creditId": "634ddee49e458600811b437b",
+     "department": "Crew",
+     "id": 1635206,
+     "job": "Stunts",
+     "name": "Crystal Hooks",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634dddf589f7490082e2073f",
+     "department": "Crew",
+     "id": 31570,
+     "job": "Stunts",
+     "name": "Jane Oshita",
+     "gender": 1,
+     "profilePath": "/v5sixUVr6kFFhsmyvkEFaScKYvV.jpg"
+    },
+    {
+     "creditId": "634ddf96459ad6007dd139f2",
+     "department": "Crew",
+     "id": 1635135,
+     "job": "Stunts",
+     "name": "Shellita Boxie",
+     "gender": 1,
+     "profilePath": "/fOmN21OEJUNlVahm0EeM50FSr7u.jpg"
+    },
+    {
+     "creditId": "634dded0ec0c5800792d32e0",
+     "department": "Crew",
+     "id": 1635208,
+     "job": "Stunts",
+     "name": "Damita Jane Howard",
+     "gender": 1,
+     "profilePath": "/kBwvlcBzRsy24tQnFV0iK6YzmIO.jpg"
+    },
+    {
+     "creditId": "634ddf64ef9d72009164dd07",
+     "department": "Crew",
+     "id": 2320929,
+     "job": "Stunts",
+     "name": "Jennifer Cobb",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634ddfbd9e4586007ea4ec68",
+     "department": "Crew",
+     "id": 2446398,
+     "job": "Stunts",
+     "name": "JoAnn Bernat",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634ddfd7ca7ec6008121d8b8",
+     "department": "Crew",
+     "id": 1825134,
+     "job": "Stunts",
+     "name": "Danya Bateman",
+     "gender": 1,
+     "profilePath": "/zm8g9IYRwh60NGMfPcpwnprZjTc.jpg"
+    },
+    {
+     "creditId": "634ddfec12eb890082c5640d",
+     "department": "Crew",
+     "id": 1381396,
+     "job": "Stunts",
+     "name": "Raven-Danielle Baker",
+     "gender": 1,
+     "profilePath": "/aMOAidDPIWSLmS6yWiOao5DY6HU.jpg"
+    },
+    {
+     "creditId": "634dde1bd100b6007a51c62c",
+     "department": "Crew",
+     "id": 1694535,
+     "job": "Stunts",
+     "name": "Haley Nott",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634ddf019e4586007ea4ec45",
+     "department": "Crew",
+     "id": 1463669,
+     "job": "Stunts",
+     "name": "Jenn A. Harris",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "634de006d6dbba007aa74ea3",
+     "department": "Crew",
+     "id": 1399126,
+     "job": "Stunts",
+     "name": "Jennifer Badger",
+     "gender": 1,
+     "profilePath": "/KCHafCk2phip2nruX8kDg3gcNN.jpg"
+    },
+    {
+     "creditId": "570bcf85c3a36802ac0001e1",
+     "department": "Art",
+     "id": 11508,
+     "job": "Supervising Art Director",
+     "name": "Dan Webster",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "570bcf719251413c900001c4",
+     "department": "Art",
+     "id": 967137,
+     "job": "Supervising Art Director",
+     "name": "David Scheunemann",
+     "gender": 2,
+     "profilePath": "/sTwS35jNj7OaMrCNGOl9YQQOytP.jpg"
+    },
+    {
+     "creditId": "57251bd8c3a3681c260008d1",
+     "department": "Production",
+     "id": 189111,
+     "job": "Executive Producer",
+     "name": "Suzanne Collins",
+     "gender": 1,
+     "profilePath": "/weOQf4FEiI72G5mA0mK1gZk8H6M.jpg"
+    },
+    {
+     "creditId": "577ad8619251415af2000375",
+     "department": "Sound",
+     "id": 1213,
+     "job": "Original Music Composer",
+     "name": "James Newton Howard",
+     "gender": 2,
+     "profilePath": "/qB4JgzCXCjr7NwW7UNrgBrWZDlo.jpg"
+    },
+    {
+     "creditId": "58ca7057c3a368419b009aa4",
+     "department": "Sound",
+     "id": 113045,
+     "job": "Foley",
+     "name": "Dawn Fintor",
+     "gender": 1,
+     "profilePath": "/gaGtvXaFT7hZzGc12KsYp91etlh.jpg"
+    },
+    {
+     "creditId": "660871b2021cee0163490a26",
+     "department": "Crew",
+     "id": 1634438,
+     "job": "Stunts",
+     "name": "Allan Padelford",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "59de4c26925141251f0913b7",
+     "department": "Crew",
+     "id": 1904075,
+     "job": "Stunts",
+     "name": "Serge Crozon-Cazin",
+     "gender": 2,
+     "profilePath": "/jpqpKcdiE7vAV2rtts2Ajdtx1BN.jpg"
+    },
+    {
+     "creditId": "6447a6dee18b9705065b0b90",
+     "department": "Crew",
+     "id": 1634845,
+     "job": "Stunts",
+     "name": "Phong Giang",
+     "gender": 2,
+     "profilePath": "/s4Bx4cSiQHn7hevaNMZhqv6zIBV.jpg"
+    },
+    {
+     "creditId": "5ac41870c3a3682db50415fe",
+     "department": "Crew",
+     "id": 1825883,
+     "job": "Utility Stunts",
+     "name": "Daniel Hargrave",
+     "gender": 2,
+     "profilePath": "/7yzWZh94SUacqxhV5zkIzLlkr5f.jpg"
+    },
+    {
+     "creditId": "64a37b36d400f3010c368351",
+     "department": "Crew",
+     "id": 4145772,
+     "job": "CG Supervisor",
+     "name": "Benjamin Huber",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "5c2ea9659251415f3c6d2989",
+     "department": "Camera",
+     "id": 36,
+     "job": "Camera Operator",
+     "name": "Don Burgess",
+     "gender": 2,
+     "profilePath": "/1ot4NJnkD7dkTvPcjjZvMB3lKqw.jpg"
+    },
+    {
+     "creditId": "5cd9ea199251412b3fd19bb8",
+     "department": "Directing",
+     "id": 1442148,
+     "job": "Second Unit Director",
+     "name": "Charles Gibson",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "5cd9e8fc9251412b3fd19a8c",
+     "department": "Production",
+     "id": 23541,
+     "job": "Executive Producer",
+     "name": "Joseph Drake",
+     "gender": 2,
+     "profilePath": "/wqglmbkM3iT9ijqhskp87ZgwkR2.jpg"
+    },
+    {
+     "creditId": "5cd8897dc3a36831dec20e09",
+     "department": "Directing",
+     "id": 1733214,
+     "job": "First Assistant Director",
+     "name": "Christopher Surgent",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "5cd889ebc3a3684a97c21ada",
+     "department": "Production",
+     "id": 72956,
+     "job": "Executive In Charge Of Production",
+     "name": "Donna Sloan",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "5cd889090e0a2659cdcc1ca6",
+     "department": "Production",
+     "id": 1539280,
+     "job": "Co-Producer",
+     "name": "Bryan Unkeless",
+     "gender": 2,
+     "profilePath": "/exxDmaKXzYeoubx3qJ7pTa0xJ4x.jpg"
+    },
+    {
+     "creditId": "5cd889589251415ec5cec389",
+     "department": "Production",
+     "id": 91055,
+     "job": "Unit Production Manager",
+     "name": "Jan Foster",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "5cd88725925141301dcd7561",
+     "department": "Crew",
+     "id": 1233,
+     "job": "In Memory Of",
+     "name": "Philip Seymour Hoffman",
+     "gender": 2,
+     "profilePath": "/50rqDkmvXwjwVhFH7q6ph2Rkw7S.jpg"
+    },
+    {
+     "creditId": "5cd888c0c3a3683c67c175de",
+     "department": "Production",
+     "id": 91055,
+     "job": "Executive Producer",
+     "name": "Jan Foster",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "5cd887680e0a265c8dcc82ac",
+     "department": "Writing",
+     "id": 189111,
+     "job": "Adaptation",
+     "name": "Suzanne Collins",
+     "gender": 1,
+     "profilePath": "/weOQf4FEiI72G5mA0mK1gZk8H6M.jpg"
+    },
+    {
+     "creditId": "5cd888e19251412486cf404f",
+     "department": "Production",
+     "id": 971840,
+     "job": "Executive Producer",
+     "name": "Allison Shearmur",
+     "gender": 1,
+     "profilePath": "/3uB3URTSZ1SVkAzYspry2eycJZY.jpg"
+    },
+    {
+     "creditId": "5cd88997c3a36877cfc1a3d0",
+     "department": "Directing",
+     "id": 2068880,
+     "job": "Second Assistant Director",
+     "name": "Douglas Plasse",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "5e19f435255dba0011e1ea46",
+     "department": "Sound",
+     "id": 1345596,
+     "job": "Dialogue Editor",
+     "name": "Ralph Osborn",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "5e19f448a0be280013018dd0",
+     "department": "Sound",
+     "id": 1404366,
+     "job": "Dialogue Editor",
+     "name": "Thomas Jones",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "5e19f4d5a0be280018012fae",
+     "department": "Camera",
+     "id": 1400373,
+     "job": "Second Unit Director of Photography",
+     "name": "Josh Bleibtreu",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "5e1b7cc1e194b00014b6169f",
+     "department": "Art",
+     "id": 1335066,
+     "job": "Property Master",
+     "name": "Andrew Petrotta",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "5e8a983a9979d20019edd09a",
+     "department": "Crew",
+     "id": 1779512,
+     "job": "Stunt Double",
+     "name": "Jackson Spidell",
+     "gender": 2,
+     "profilePath": "/dG4nduTl3cBiZi61bwlbZeeWPC5.jpg"
+    },
+    {
+     "creditId": "66e526bd96e93efb9d2e2380",
+     "department": "Camera",
+     "id": 2396543,
+     "job": "Camera Operator",
+     "name": "Michael Burgess",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "671c0c141ea33928297d3f51",
+     "department": "Crew",
+     "id": 2254305,
+     "job": "Special Effects Technician",
+     "name": "Trey Gordon",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "67315fc92a4cbc2a12f66bd7",
+     "department": "Lighting",
+     "id": 1077352,
+     "job": "Electrician",
+     "name": "Yvan Quehec",
+     "gender": 2,
+     "profilePath": "/1UK8dycx5AH8stEE5wq86Kf2vuh.jpg"
+    },
+    {
+     "creditId": "677db12dc81acaa63dbaf60b",
+     "department": "Sound",
+     "id": 226001,
+     "job": "Songs",
+     "name": "Ariana Grande",
+     "gender": 1,
+     "profilePath": "/d4HtCXm58GuqVJVGgDKFn0dEj8M.jpg"
+    },
+    {
+     "creditId": "677db17e044b6ca6764e4c51",
+     "department": "Sound",
+     "id": 1529997,
+     "job": "Songs",
+     "name": "Charli xcx",
+     "gender": 1,
+     "profilePath": "/xnYIKjdP2anSMmDlFbJN3zZQMkC.jpg"
+    },
+    {
+     "creditId": "67af8d8388917a03f38e7486",
+     "department": "Editing",
+     "id": 1542917,
+     "job": "Digital Intermediate Colorist",
+     "name": "Yvan Lucas",
+     "gender": 2,
+     "profilePath": "/d4T7CJP3zI41BOTTNKknWMl6XMI.jpg"
+    },
+    {
+     "creditId": "685ebc37b0af52ec83155a6c",
+     "department": "Visual Effects",
+     "id": 1764772,
+     "job": "Visual Effects",
+     "name": "Michael Shapcotte",
+     "gender": 2,
+     "profilePath": null
+    },
+    {
+     "creditId": "695555a669f1e6880c74f152",
+     "department": "Visual Effects",
+     "id": 1388870,
+     "job": "Visual Effects Coordinator",
+     "name": "Allison Paul",
+     "gender": 1,
+     "profilePath": null
+    },
+    {
+     "creditId": "69c5fb3cde47e7898f8f5d55",
+     "department": "Sound",
+     "id": 1547997,
+     "job": "Songs",
+     "name": "Stromae",
+     "gender": 2,
+     "profilePath": "/piMDpLQvjQDJ8G6HpqahFy6aUp3.jpg"
+    },
+    {
+     "creditId": "69c5fb5abec1af3a364dc855",
+     "department": "Sound",
+     "id": 1741367,
+     "job": "Songs",
+     "name": "Alana Haim",
+     "gender": 1,
+     "profilePath": "/uOU4uueRxH5BYhzNjzPxJOxZStJ.jpg"
+    },
+    {
+     "creditId": "69c5fb6639267adc83421c51",
+     "department": "Sound",
+     "id": 1741368,
+     "job": "Songs",
+     "name": "Danielle Haim",
+     "gender": 1,
+     "profilePath": "/6nxx0Up4Qc1ugme5cuGeNUt54cu.jpg"
+    },
+    {
+     "creditId": "69c5fb707ff5f4f802421cb7",
+     "department": "Sound",
+     "id": 1741366,
+     "job": "Songs",
+     "name": "Este Haim",
+     "gender": 1,
+     "profilePath": "/aUVgUkRK980y030GMCNFsvRP9Vh.jpg"
+    },
+    {
+     "creditId": "69c5fb92de47e7898f8f5d68",
+     "department": "Sound",
+     "id": 1500279,
+     "job": "Songs",
+     "name": "Pusha T",
+     "gender": 2,
+     "profilePath": "/diGdkQgfiwtqWa08e4cS7e5EKbi.jpg"
+    },
+    {
+     "creditId": "69c5fb9d30d71b727703d385",
+     "department": "Sound",
+     "id": 95494,
+     "job": "Songs",
+     "name": "Q-Tip",
+     "gender": 2,
+     "profilePath": "/kHvwyk7aHXALbG6t8WeWU26045e.jpg"
+    },
+    {
+     "creditId": "69c5fbc1ea8e99f4574dc830",
+     "department": "Sound",
+     "id": 1624372,
+     "job": "Songs",
+     "name": "Lauren Mayberry",
+     "gender": 1,
+     "profilePath": "/dXiHjXHODfCwSbiI7uHznp3qY1m.jpg"
+    },
+    {
+     "creditId": "69c5fbd552186ec21e421cd1",
+     "department": "Sound",
+     "id": 1624387,
+     "job": "Songs",
+     "name": "Martin Doherty",
+     "gender": 2,
+     "profilePath": "/gLjpUMMzaeH8gHRbgN864ZFhU2M.jpg"
+    },
+    {
+     "creditId": "69c5fbed26bc99b40f421c28",
+     "department": "Sound",
+     "id": 1702842,
+     "job": "Songs",
+     "name": "Tove Lo",
+     "gender": 1,
+     "profilePath": "/js10eXFmXrsETlhfShL9FCZKCsy.jpg"
+    },
+    {
+     "creditId": "69c5fc2dd0c1e948b5ad8a93",
+     "department": "Sound",
+     "id": 2138298,
+     "job": "Songs",
+     "name": "M\u00d8",
+     "gender": 1,
+     "profilePath": "/g15DxwXiVtpkcUD8iFVxO2JGSqZ.jpg"
+    },
+    {
+     "creditId": "69c5fc38b06479cdb4421c5c",
+     "department": "Sound",
+     "id": 1555229,
+     "job": "Songs",
+     "name": "Diplo",
+     "gender": 2,
+     "profilePath": "/snohpneYnVs24c6EYP54784bwh6.jpg"
+    },
+    {
+     "creditId": "69c5fc6aae7c2a1999c62ec0",
+     "department": "Sound",
+     "id": 206100,
+     "job": "Songs",
+     "name": "Tinashe",
+     "gender": 1,
+     "profilePath": "/5v77984NLoSW91Gj1JCvsUyViJX.jpg"
+    },
+    {
+     "creditId": "69c5fc7f283bcc1464afd1b6",
+     "department": "Sound",
+     "id": 3469777,
+     "job": "Songs",
+     "name": "Ryan Lott",
+     "gender": 2,
+     "profilePath": "/aPOdQOrR7dUBbZ3Gw3Mp1o4xgU8.jpg"
+    },
+    {
+     "creditId": "69c5fc916b3f208aecafd15c",
+     "department": "Sound",
+     "id": 1357011,
+     "job": "Songs",
+     "name": "Natasha Khan",
+     "gender": 1,
+     "profilePath": "/U88WSUT42p2BHHgf3urKfuJeUn.jpg"
+    },
+    {
+     "creditId": "69c5fcac02acaf539c03d326",
+     "department": "Sound",
+     "id": 10661,
+     "job": "Songs",
+     "name": "Grace Jones",
+     "gender": 1,
+     "profilePath": "/uelIBmzuRiwnBjqibPGbX58ULUe.jpg"
+    },
+    {
+     "creditId": "69c5fd016689b1201d421c43",
+     "department": "Sound",
+     "id": 1965505,
+     "job": "Songs",
+     "name": "Miguel",
+     "gender": 2,
+     "profilePath": "/3wY3gmW5PQo5vjD1bVWML1h2f7e.jpg"
+    },
+    {
+     "creditId": "69c5fd15a2890f111cafd0d8",
+     "department": "Sound",
+     "id": 1350598,
+     "job": "Songs",
+     "name": "Tom Rowlands",
+     "gender": 2,
+     "profilePath": "/pNYR7heA5rtvHFrLsdOMKRg4Hz8.jpg"
+    },
+    {
+     "creditId": "69c5fd223fb01bd49308a80a",
+     "department": "Sound",
+     "id": 1350600,
+     "job": "Songs",
+     "name": "Ed Simons",
+     "gender": 2,
+     "profilePath": "/sU6IkPfE73ux5HoUey2wJq18LiZ.jpg"
+    },
+    {
+     "creditId": "6a29cd546b7ecaac64af8840",
+     "department": "Visual Effects",
+     "id": 2142808,
+     "job": "VFX Artist",
+     "name": "Garry Maddison",
+     "gender": 0,
+     "profilePath": null
+    },
+    {
+     "creditId": "6aceb503e299e0654fdda2c9",
+     "department": "Visual Effects",
+     "id": 2005484,
+     "job": "Compositing Supervisor",
+     "name": "Dan Breckwoldt",
+     "gender": 2,
+     "profilePath": null
+    }
+   ]
+  },
+  "collection": {
+   "id": 131635,
+   "name": "The Hunger Games Collection",
+   "posterPath": "/cEBNDEMGqvSvU0knEv9Wl3dk5kv.jpg",
+   "backdropPath": "/Ipp7cegtub4t0mu7xaKLQkYoGc.jpg"
+  },
+  "externalIds": {
+   "facebookId": "TheHungerGamesMovie",
+   "imdbId": "tt1951265",
+   "instagramId": "thehungergames",
+   "twitterId": "TheHungerGames"
+  },
+  "mediaInfo": {
+   "downloadStatus": [],
+   "downloadStatus4k": [],
+   "id": 914,
+   "mediaType": "movie",
+   "tmdbId": 131631,
+   "tvdbId": null,
+   "imdbId": null,
+   "status": 5,
+   "status4k": 1,
+   "createdAt": "2026-11-14T01:15:06.000Z",
+   "updatedAt": "2026-11-14T04:32:17.000Z",
+   "lastSeasonChange": "2026-11-14T01:15:06.000Z",
+   "mediaAddedAt": "2026-11-14T01:15:06.000Z",
+   "serviceId": 0,
+   "serviceId4k": null,
+   "externalServiceId": 634,
+   "externalServiceId4k": null,
+   "externalServiceSlug": "131631",
+   "externalServiceSlug4k": null,
+   "ratingKey": null,
+   "ratingKey4k": null,
+   "jellyfinMediaId": null,
+   "jellyfinMediaId4k": null,
+   "requests": [
+    {
+     "id": 911,
+     "status": 5,
+     "createdAt": "2026-11-14T01:15:06.000Z",
+     "updatedAt": "2026-11-14T04:32:17.000Z",
+     "type": "movie",
+     "is4k": false,
+     "serverId": 0,
+     "profileId": 4,
+     "rootFolder": "/data/media/movies",
+     "languageProfileId": null,
+     "tags": [],
+     "isAutoRequest": false,
+     "ignoreQuota": false,
+     "media": {
+      "downloadStatus": [],
+      "downloadStatus4k": [],
+      "id": 914,
+      "mediaType": "movie",
+      "tmdbId": 131631,
+      "tvdbId": null,
+      "imdbId": null,
+      "status": 5,
+      "status4k": 1,
+      "createdAt": "2026-11-14T01:15:06.000Z",
+      "updatedAt": "2026-11-14T04:32:17.000Z",
+      "lastSeasonChange": "2026-11-14T01:15:06.000Z",
+      "mediaAddedAt": "2026-11-14T01:15:06.000Z",
+      "serviceId": 0,
+      "serviceId4k": null,
+      "externalServiceId": 634,
+      "externalServiceId4k": null,
+      "externalServiceSlug": "131631",
+      "externalServiceSlug4k": null,
+      "ratingKey": null,
+      "ratingKey4k": null,
+      "jellyfinMediaId": null,
+      "jellyfinMediaId4k": null,
+      "serviceUrl": "http://radarr.home.arpa:7878/movie/131631"
+     },
+     "requestedBy": {
+      "permissions": 2,
+      "warnings": [],
+      "id": 1,
+      "plexUsername": null,
+      "jellyfinUsername": "Test User",
+      "username": null,
+      "recoveryLinkExpirationDate": null,
+      "userType": 3,
+      "jellyfinUserId": "00000000000000000000000000000000",
+      "avatar": "/avatarproxy/19caeaaa1def4970a0173049a8b8cdd3?v=null",
+      "avatarETag": null,
+      "avatarVersion": null,
+      "movieQuotaLimit": null,
+      "movieQuotaDays": null,
+      "tvQuotaLimit": null,
+      "tvQuotaDays": null,
+      "createdAt": "2026-02-26T02:02:58.000Z",
+      "updatedAt": "2026-02-26T02:02:58.000Z",
+      "requestCount": 820,
+      "displayName": "Test User"
+     },
+     "modifiedBy": {
+      "permissions": 2,
+      "warnings": [],
+      "id": 1,
+      "plexUsername": null,
+      "jellyfinUsername": "Test User",
+      "username": null,
+      "recoveryLinkExpirationDate": null,
+      "userType": 3,
+      "jellyfinUserId": "00000000000000000000000000000000",
+      "avatar": "/avatarproxy/19caeaaa1def4970a0173049a8b8cdd3?v=null",
+      "avatarETag": null,
+      "avatarVersion": null,
+      "movieQuotaLimit": null,
+      "movieQuotaDays": null,
+      "tvQuotaLimit": null,
+      "tvQuotaDays": null,
+      "createdAt": "2026-02-26T02:02:58.000Z",
+      "updatedAt": "2026-02-26T02:02:58.000Z",
+      "requestCount": 820,
+      "displayName": "Test User"
+     },
+     "seasons": [],
+     "seasonCount": 0
+    }
+   ],
+   "issues": [],
+   "seasons": [],
+   "serviceUrl": "http://radarr.home.arpa:7878/movie/131631"
+  },
+  "watchProviders": [
+   {
+    "iso_3166_1": "AD",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=AD",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "AE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=AE",
+    "buy": [
+     {
+      "displayPriority": 5,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "AL",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=AL",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 36,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "AR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=AR",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/kxUmV9TCZHfukpVOMuN90Jibbnm.png",
+      "id": 339,
+      "name": "MovistarTV"
+     },
+     {
+      "displayPriority": 60,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     },
+     {
+      "displayPriority": 63,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "AT",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=AT",
+    "buy": [
+     {
+      "displayPriority": 5,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 10,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 15,
+      "logoPath": "/mjB4eyswPoC0XeJPUd1W1oitOlh.png",
+      "id": 20,
+      "name": "maxdome Store"
+     },
+     {
+      "displayPriority": 19,
+      "logoPath": "/nNkZ1JKe6vNhzti14KiKEUWHE6H.png",
+      "id": 130,
+      "name": "Sky Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 112,
+      "logoPath": "/dfVl7ObYdVUUihKEqheARvnFtgI.png",
+      "id": 2288,
+      "name": "Allstars Amazon Channel"
+     },
+     {
+      "displayPriority": 174,
+      "logoPath": "/lpkTTPzEnn8qzVGqDSWdhkPYUGZ.png",
+      "id": 1806,
+      "name": "Studiocanal Presents ALLSTARS Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "AU",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=AU",
+    "buy": [
+     {
+      "displayPriority": 15,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 16,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 23,
+      "logoPath": "/5Maob4o5w8oZnNeYpCDyVFD3M7X.png",
+      "id": 192,
+      "name": "YouTube"
+     },
+     {
+      "displayPriority": 32,
+      "logoPath": "/hFTUerTxMwrM9RIo9z48qxCsi7z.png",
+      "id": 436,
+      "name": "Fetch TV"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 4,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 9,
+      "logoPath": "/pkx3klJlwW5JdtaulvDx6hDNtch.png",
+      "id": 531,
+      "name": "Paramount Plus"
+     },
+     {
+      "displayPriority": 10,
+      "logoPath": "/bxX0YVOCY7bI85BKRlJAAQ2EjUR.png",
+      "id": 582,
+      "name": "Paramount+ Amazon Channel"
+     },
+     {
+      "displayPriority": 14,
+      "logoPath": "/6dOWQKIRIxDmX5FD4g5dPsHxFn3.png",
+      "id": 21,
+      "name": "Stan"
+     },
+     {
+      "displayPriority": 81,
+      "logoPath": "/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png",
+      "id": 2303,
+      "name": "Paramount Plus Premium"
+     },
+     {
+      "displayPriority": 82,
+      "logoPath": "/ylBHMFuVsJqQ8JUzmfmPsEn97Ez.png",
+      "id": 2304,
+      "name": "Paramount Plus Basic with Ads"
+     },
+     {
+      "displayPriority": 92,
+      "logoPath": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png",
+      "id": 2100,
+      "name": "Amazon Prime Video with Ads"
+     },
+     {
+      "displayPriority": 106,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "BA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BA",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 29,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "BE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BE",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 37,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     },
+     {
+      "displayPriority": 60,
+      "logoPath": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png",
+      "id": 1825,
+      "name": "HBO Max Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "BG",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BG",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     },
+     {
+      "displayPriority": 22,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "BH",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BH",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "BO",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BO",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "BR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BR",
+    "buy": [
+     {
+      "displayPriority": 10,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 14,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 76,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     },
+     {
+      "displayPriority": 90,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "BY",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BY",
+    "buy": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "BZ",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=BZ",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "CA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=CA",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 14,
+      "logoPath": "/fyUUKmDdzpJjSwsXPN4Rpi7jTu5.png",
+      "id": 140,
+      "name": "CosmoGo"
+     },
+     {
+      "displayPriority": 36,
+      "logoPath": "/5Maob4o5w8oZnNeYpCDyVFD3M7X.png",
+      "id": 192,
+      "name": "YouTube"
+     },
+     {
+      "displayPriority": 57,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 16,
+      "logoPath": "/a2o4bE63LR71m8jHrkx9BnBucN0.png",
+      "id": 230,
+      "name": "Crave"
+     },
+     {
+      "displayPriority": 52,
+      "logoPath": "/f8793PGMyrigh8uPd9BiK2jLV7N.png",
+      "id": 469,
+      "name": "Club Illico"
+     },
+     {
+      "displayPriority": 91,
+      "logoPath": "/adymMNlhhLlJl5xccRCrsh3OehD.png",
+      "id": 1794,
+      "name": "Starz Amazon Channel"
+     },
+     {
+      "displayPriority": 137,
+      "logoPath": "/6EuODonAziRYWv90wAtEmUjk78R.png",
+      "id": 2604,
+      "name": "Crave Amazon Channel"
+     },
+     {
+      "displayPriority": 142,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "CH",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=CH",
+    "buy": [
+     {
+      "displayPriority": 5,
+      "logoPath": "/omviag2i66PzB1VqDc48pbwTC8Z.png",
+      "id": 150,
+      "name": "blue TV"
+     },
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 9,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 14,
+      "logoPath": "/nNkZ1JKe6vNhzti14KiKEUWHE6H.png",
+      "id": 130,
+      "name": "Sky Store"
+     },
+     {
+      "displayPriority": 71,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "CL",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=CL",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 55,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 9,
+      "logoPath": "/kxUmV9TCZHfukpVOMuN90Jibbnm.png",
+      "id": 339,
+      "name": "MovistarTV"
+     },
+     {
+      "displayPriority": 49,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     },
+     {
+      "displayPriority": 68,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "CO",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=CO",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 56,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 9,
+      "logoPath": "/kxUmV9TCZHfukpVOMuN90Jibbnm.png",
+      "id": 339,
+      "name": "MovistarTV"
+     },
+     {
+      "displayPriority": 50,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     },
+     {
+      "displayPriority": 70,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "CR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=CR",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 44,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "CU",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=CU",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "CZ",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=CZ",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     },
+     {
+      "displayPriority": 26,
+      "logoPath": "/gzlCSbeTdiLJNxdZuMKNhW8X7cy.png",
+      "id": 1939,
+      "name": "Lepsi TV"
+     },
+     {
+      "displayPriority": 30,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     },
+     {
+      "displayPriority": 33,
+      "logoPath": "/i2b7mxkUywkzwVVNUTPpIIKXsTt.png",
+      "id": 2536,
+      "name": "Oneplay"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "DE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=DE",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 9,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 13,
+      "logoPath": "/5Maob4o5w8oZnNeYpCDyVFD3M7X.png",
+      "id": 192,
+      "name": "YouTube"
+     },
+     {
+      "displayPriority": 18,
+      "logoPath": "/f1uWfExJA6DSAvuTL0YJ9Kyftfg.png",
+      "id": 178,
+      "name": "MagentaTV"
+     },
+     {
+      "displayPriority": 21,
+      "logoPath": "/mjB4eyswPoC0XeJPUd1W1oitOlh.png",
+      "id": 20,
+      "name": "maxdome Store"
+     },
+     {
+      "displayPriority": 23,
+      "logoPath": "/nNkZ1JKe6vNhzti14KiKEUWHE6H.png",
+      "id": 130,
+      "name": "Sky Store"
+     },
+     {
+      "displayPriority": 25,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 105,
+      "logoPath": "/kWgg0b4wHDr4pwSyOXVK8nAsNKB.png",
+      "id": 1993,
+      "name": "Videoload"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 5,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 24,
+      "logoPath": "/4a1AfcgwF3QeEmRkgbpFj3QZdJn.png",
+      "id": 2578,
+      "name": "RTL+ Max Amazon Channel"
+     },
+     {
+      "displayPriority": 171,
+      "logoPath": "/dfVl7ObYdVUUihKEqheARvnFtgI.png",
+      "id": 2288,
+      "name": "Allstars Amazon Channel"
+     },
+     {
+      "displayPriority": 241,
+      "logoPath": "/lpkTTPzEnn8qzVGqDSWdhkPYUGZ.png",
+      "id": 1806,
+      "name": "Studiocanal Presents ALLSTARS Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "DK",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=DK",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 13,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 15,
+      "logoPath": "/q8EUxAMcTw7qjdMKMcTPLl06gum.png",
+      "id": 423,
+      "name": "Blockbuster"
+     },
+     {
+      "displayPriority": 16,
+      "logoPath": "/fVuqy8kmzsULoJjc3ROOcurRH7S.png",
+      "id": 426,
+      "name": "SF Anytime"
+     },
+     {
+      "displayPriority": 46,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 7,
+      "logoPath": "/c1J9PGGowXwW5AxAaZaGipeFu7U.png",
+      "id": 76,
+      "name": "Viaplay"
+     },
+     {
+      "displayPriority": 27,
+      "logoPath": "/71QHw5DjmB6oBi8KjQjXi2DHW5q.png",
+      "id": 621,
+      "name": "Nordisk Film+"
+     },
+     {
+      "displayPriority": 37,
+      "logoPath": "/hPIVVR7yvR0PrTe7eHR2I5nAFis.png",
+      "id": 1961,
+      "name": "Allente"
+     },
+     {
+      "displayPriority": 39,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "DO",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=DO",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 45,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "DZ",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=DZ",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "EC",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=EC",
+    "buy": [
+     {
+      "displayPriority": 9,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/kxUmV9TCZHfukpVOMuN90Jibbnm.png",
+      "id": 339,
+      "name": "MovistarTV"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "EG",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=EG",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "ES",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=ES",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 10,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 34,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 3,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 79,
+      "logoPath": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png",
+      "id": 2100,
+      "name": "Amazon Prime Video with Ads"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "FI",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=FI",
+    "buy": [
+     {
+      "displayPriority": 10,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 12,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 13,
+      "logoPath": "/q8EUxAMcTw7qjdMKMcTPLl06gum.png",
+      "id": 423,
+      "name": "Blockbuster"
+     },
+     {
+      "displayPriority": 14,
+      "logoPath": "/fVuqy8kmzsULoJjc3ROOcurRH7S.png",
+      "id": 426,
+      "name": "SF Anytime"
+     },
+     {
+      "displayPriority": 19,
+      "logoPath": "/yhvtjo9LTKCLCSQMv7ihPREKPnv.png",
+      "id": 540,
+      "name": "Elisa Viihde"
+     },
+     {
+      "displayPriority": 52,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 19,
+      "logoPath": "/yhvtjo9LTKCLCSQMv7ihPREKPnv.png",
+      "id": 540,
+      "name": "Elisa Viihde"
+     },
+     {
+      "displayPriority": 33,
+      "logoPath": "/c1J9PGGowXwW5AxAaZaGipeFu7U.png",
+      "id": 76,
+      "name": "Viaplay"
+     },
+     {
+      "displayPriority": 41,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "FR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=FR",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 14,
+      "logoPath": "/73lu1dtE9uJLWK1laXpeaAFh48j.png",
+      "id": 61,
+      "name": "Orange VOD"
+     },
+     {
+      "displayPriority": 16,
+      "logoPath": "/5Maob4o5w8oZnNeYpCDyVFD3M7X.png",
+      "id": 192,
+      "name": "YouTube"
+     },
+     {
+      "displayPriority": 19,
+      "logoPath": "/51fX3l4yElitnfui0IkbMUmfmgF.png",
+      "id": 58,
+      "name": "Canal VOD"
+     },
+     {
+      "displayPriority": 37,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 54,
+      "logoPath": "/zbXVTncv6m6ojLjPQJeW7u0SYKp.png",
+      "id": 2601,
+      "name": "Path\u00e9 Home"
+     },
+     {
+      "displayPriority": 77,
+      "logoPath": "/uzTONLCUH92RRMSzs206OYtWVml.png",
+      "id": 2286,
+      "name": "VIVA by videofutur"
+     },
+     {
+      "displayPriority": 79,
+      "logoPath": "/yERf5EH3GjWMB0ZSWPaov1kCKrR.png",
+      "id": 2307,
+      "name": "Premiere Max"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 33,
+      "logoPath": "/g8P4BJ2Wrya0VkbGUxBoUqpXtSs.png",
+      "id": 1967,
+      "name": "Molotov TV"
+     },
+     {
+      "displayPriority": 85,
+      "logoPath": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png",
+      "id": 2100,
+      "name": "Amazon Prime Video with Ads"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "GB",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=GB",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 7,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 10,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 20,
+      "logoPath": "/nNkZ1JKe6vNhzti14KiKEUWHE6H.png",
+      "id": 130,
+      "name": "Sky Store"
+     },
+     {
+      "displayPriority": 25,
+      "logoPath": "/5Maob4o5w8oZnNeYpCDyVFD3M7X.png",
+      "id": 192,
+      "name": "YouTube"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 4,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 15,
+      "logoPath": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png",
+      "id": 1825,
+      "name": "HBO Max Amazon Channel"
+     },
+     {
+      "displayPriority": 16,
+      "logoPath": "/1Yvl9eP3pmktqChitnFhHJHcBtX.png",
+      "id": 29,
+      "name": "Sky Go"
+     },
+     {
+      "displayPriority": 59,
+      "logoPath": "/hlfGtOZsbFw8jwVwDaFPUbaKgrq.png",
+      "id": 591,
+      "name": "Now TV Cinema"
+     },
+     {
+      "displayPriority": 170,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     },
+     {
+      "displayPriority": 175,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "GF",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=GF",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "GG",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=GG",
+    "buy": [
+     {
+      "displayPriority": 82,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 89,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "GR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=GR",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 4,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "GT",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=GT",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 44,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "HK",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=HK",
+    "buy": [
+     {
+      "displayPriority": 9,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "HN",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=HN",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "HR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=HR",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 33,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "HU",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=HU",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     },
+     {
+      "displayPriority": 28,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "ID",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=ID",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 17,
+      "logoPath": "/yEa5cB4KpN4LkiuNhbtsnUR6PX5.png",
+      "id": 489,
+      "name": "Vidio"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "IE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=IE",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 10,
+      "logoPath": "/nNkZ1JKe6vNhzti14KiKEUWHE6H.png",
+      "id": 130,
+      "name": "Sky Store"
+     },
+     {
+      "displayPriority": 13,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 43,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 9,
+      "logoPath": "/1Yvl9eP3pmktqChitnFhHJHcBtX.png",
+      "id": 29,
+      "name": "Sky Go"
+     },
+     {
+      "displayPriority": 44,
+      "logoPath": "/hlfGtOZsbFw8jwVwDaFPUbaKgrq.png",
+      "id": 591,
+      "name": "Now TV Cinema"
+     },
+     {
+      "displayPriority": 67,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "IN",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=IN",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 4,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 70,
+      "logoPath": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png",
+      "id": 2100,
+      "name": "Amazon Prime Video with Ads"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "IQ",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=IQ",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "IT",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=IT",
+    "buy": [
+     {
+      "displayPriority": 5,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 12,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 35,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 38,
+      "logoPath": "/xfDy4aGaOqbUqKPVQobjoJ9ZsSs.png",
+      "id": 40,
+      "name": "CHILI"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 87,
+      "logoPath": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png",
+      "id": 2100,
+      "name": "Amazon Prime Video with Ads"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "JO",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=JO",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "JP",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=JP",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 9,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png",
+      "id": 15,
+      "name": "Hulu"
+     },
+     {
+      "displayPriority": 7,
+      "logoPath": "/3DGpCh83CR9lDzyKbNWlmUBexBF.png",
+      "id": 84,
+      "name": "U-NEXT"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "KR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=KR",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/mh1vBeclG7Eq15TjRnmyustqp3v.png",
+      "id": 356,
+      "name": "wavve"
+     },
+     {
+      "displayPriority": 7,
+      "logoPath": "/ppQIS7UMtBwJSspSoGqDR8wO1Gr.png",
+      "id": 97,
+      "name": "Watcha"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "KW",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=KW",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "LB",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=LB",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "LI",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=LI",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "LU",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=LU",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "MA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=MA",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "MC",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=MC",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "MD",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=MD",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 26,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "ME",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=ME",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "MK",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=MK",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 27,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "MX",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=MX",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 9,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 52,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     },
+     {
+      "displayPriority": 84,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "MY",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=MY",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 28,
+      "logoPath": "/vvUYyCXlJMfKEo24vw4cEMavzvu.png",
+      "id": 561,
+      "name": "Lionsgate Play"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "NI",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=NI",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "NL",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=NL",
+    "buy": [
+     {
+      "displayPriority": 11,
+      "logoPath": "/oB7QrPnusUtIpKr8k0YQ12INLeP.png",
+      "id": 71,
+      "name": "Path\u00e9 Thuis"
+     },
+     {
+      "displayPriority": 41,
+      "logoPath": "/sLa7ctMpAoKdxIS72mHl7xuhONL.png",
+      "id": 697,
+      "name": "meJane"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 10,
+      "logoPath": "/3IdfSLRjSoDoo9lrpvX4oxZmnVi.png",
+      "id": 72,
+      "name": "Videoland"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "NO",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=NO",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 13,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 15,
+      "logoPath": "/q8EUxAMcTw7qjdMKMcTPLl06gum.png",
+      "id": 423,
+      "name": "Blockbuster"
+     },
+     {
+      "displayPriority": 16,
+      "logoPath": "/fVuqy8kmzsULoJjc3ROOcurRH7S.png",
+      "id": 426,
+      "name": "SF Anytime"
+     },
+     {
+      "displayPriority": 17,
+      "logoPath": "/m502wSLGwHL9WUK38NeAbwrBk6P.png",
+      "id": 431,
+      "name": "TV 2 Play"
+     },
+     {
+      "displayPriority": 48,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 7,
+      "logoPath": "/c1J9PGGowXwW5AxAaZaGipeFu7U.png",
+      "id": 76,
+      "name": "Viaplay"
+     },
+     {
+      "displayPriority": 28,
+      "logoPath": "/mlNPljPGzSDqNK2Fjr4SS0gTITj.png",
+      "id": 578,
+      "name": "Strim"
+     },
+     {
+      "displayPriority": 40,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "NZ",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=NZ",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 57,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 3,
+      "logoPath": "/5eZ872CghnHFLB1j8grszbrx0dx.png",
+      "id": 337,
+      "name": "Disney Plus"
+     },
+     {
+      "displayPriority": 5,
+      "logoPath": "/68KYULhVkHI6TVrmPSE0LlPXB1U.png",
+      "id": 273,
+      "name": "Neon TV"
+     },
+     {
+      "displayPriority": 64,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "OM",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=OM",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "PE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=PE",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 48,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "PF",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=PF",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "PH",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=PH",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "PL",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=PL",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 33,
+      "logoPath": "/w6Y6X8RIm2XolW7clhqf3VFsn5z.png",
+      "id": 2101,
+      "name": "CANAL+"
+     },
+     {
+      "displayPriority": 38,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "PS",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=PS",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "PT",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=PT",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 43,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "PY",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=PY",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 43,
+      "logoPath": "/COoISLyfBkZ9Vgr5NbjmnxacSb.png",
+      "id": 2161,
+      "name": "Sony One Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "QA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=QA",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "RO",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=RO",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     },
+     {
+      "displayPriority": 25,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "RS",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=RS",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 29,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "RU",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=RU",
+    "buy": [
+     {
+      "displayPriority": 4,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/j5NFNAdVCTTRLL2fP2MvJcYZgKz.png",
+      "id": 115,
+      "name": "Okko"
+     },
+     {
+      "displayPriority": 21,
+      "logoPath": "/oroIyNGCu4ltli1lI4m7em1IYE5.png",
+      "id": 117,
+      "name": "Kinopoisk"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "SA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=SA",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "SE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=SE",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 14,
+      "logoPath": "/872dfVu1biZISJ8rO143CZZutPR.png",
+      "id": 35,
+      "name": "Rakuten TV"
+     },
+     {
+      "displayPriority": 15,
+      "logoPath": "/q8EUxAMcTw7qjdMKMcTPLl06gum.png",
+      "id": 423,
+      "name": "Blockbuster"
+     },
+     {
+      "displayPriority": 16,
+      "logoPath": "/fVuqy8kmzsULoJjc3ROOcurRH7S.png",
+      "id": 426,
+      "name": "SF Anytime"
+     },
+     {
+      "displayPriority": 38,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     },
+     {
+      "displayPriority": 8,
+      "logoPath": "/c1J9PGGowXwW5AxAaZaGipeFu7U.png",
+      "id": 76,
+      "name": "Viaplay"
+     },
+     {
+      "displayPriority": 20,
+      "logoPath": "/tP54PxI3PdGTGpuY3CNr0rOVDjd.png",
+      "id": 497,
+      "name": "Tele2 Play"
+     },
+     {
+      "displayPriority": 43,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     },
+     {
+      "displayPriority": 64,
+      "logoPath": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png",
+      "id": 1825,
+      "name": "HBO Max Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "SG",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=SG",
+    "buy": [
+     {
+      "displayPriority": 9,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "SI",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=SI",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 30,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "SK",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=SK",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     },
+     {
+      "displayPriority": 37,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     },
+     {
+      "displayPriority": 40,
+      "logoPath": "/tRQ9JpyxNgfwxPxzOa82QTytxH9.png",
+      "id": 627,
+      "name": "Voyo"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "SM",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=SM",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "TD",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=TD",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 1,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "TH",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=TH",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "TN",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=TN",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "TR",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=TR",
+    "buy": [
+     {
+      "displayPriority": 7,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 36,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 10,
+      "logoPath": "/ck9ropbn6okqSdtgxGkkvMMgtSe.png",
+      "id": 1904,
+      "name": "TV+"
+     },
+     {
+      "displayPriority": 30,
+      "logoPath": "/skypuy7SXuugIQeYg0IglmzoKaS.png",
+      "id": 1899,
+      "name": "HBO Max"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "TW",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=TW",
+    "buy": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 2,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "UA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=UA",
+    "buy": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "US",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=US",
+    "buy": [
+     {
+      "displayPriority": 10,
+      "logoPath": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png",
+      "id": 10,
+      "name": "Amazon Video"
+     },
+     {
+      "displayPriority": 11,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     },
+     {
+      "displayPriority": 24,
+      "logoPath": "/aZRENwYILujqs0RVOZutTh0BVGV.png",
+      "id": 3,
+      "name": "Google Play Movies"
+     },
+     {
+      "displayPriority": 25,
+      "logoPath": "/5Maob4o5w8oZnNeYpCDyVFD3M7X.png",
+      "id": 192,
+      "name": "YouTube"
+     },
+     {
+      "displayPriority": 41,
+      "logoPath": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png",
+      "id": 7,
+      "name": "Fandango At Home"
+     }
+    ],
+    "flatrate": [
+     {
+      "displayPriority": 8,
+      "logoPath": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png",
+      "id": 15,
+      "name": "Hulu"
+     },
+     {
+      "displayPriority": 164,
+      "logoPath": "/1356slxu4QrHOMrEVDKHJXRo5sW.png",
+      "id": 2358,
+      "name": "Lionsgate+ Amazon Channel"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "UY",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=UY",
+    "buy": [],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "VA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=VA",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png",
+      "id": 119,
+      "name": "Amazon Prime Video"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "VE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=VE",
+    "buy": [
+     {
+      "displayPriority": 6,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   },
+   {
+    "iso_3166_1": "YE",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=YE",
+    "buy": [],
+    "flatrate": [
+     {
+      "displayPriority": 0,
+      "logoPath": "/rK1KljqmbvO9HQa1PBFLILWah72.png",
+      "id": 8,
+      "name": "Netflix"
+     }
+    ]
+   },
+   {
+    "iso_3166_1": "ZA",
+    "link": "https://www.themoviedb.org/movie/131631-the-hunger-games-mockingjay-part-1/watch?locale=ZA",
+    "buy": [
+     {
+      "displayPriority": 3,
+      "logoPath": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png",
+      "id": 2,
+      "name": "Apple TV Store"
+     }
+    ],
+    "flatrate": []
+   }
+  ],
+  "keywords": [
+   {
+    "id": 818,
+    "name": "based on novel or book"
+   },
+   {
+    "id": 836,
+    "name": "resistance"
+   },
+   {
+    "id": 4565,
+    "name": "dystopia"
+   },
+   {
+    "id": 4458,
+    "name": "post-apocalyptic future"
+   },
+   {
+    "id": 9663,
+    "name": "sequel"
+   },
+   {
+    "id": 11322,
+    "name": "female protagonist"
+   },
+   {
+    "id": 18101,
+    "name": "bow and arrow"
+   },
+   {
+    "id": 18249,
+    "name": "game"
+   },
+   {
+    "id": 162484,
+    "name": "future war"
+   },
+   {
+    "id": 162845,
+    "name": "revolt"
+   },
+   {
+    "id": 165299,
+    "name": "class prejudice"
+   },
+   {
+    "id": 207569,
+    "name": "human subjugation"
+   },
+   {
+    "id": 246466,
+    "name": "based on young adult novel"
+   }
+  ],
+  "onUserWatchlist": false
+ },
+ "seerr_requests": {
+  "pageInfo": {
+   "pages": 448,
+   "pageSize": 2,
+   "results": 895,
+   "page": 1
+  },
+  "results": [
+   {
+    "id": 926,
+    "status": 5,
+    "createdAt": "2026-11-14T04:39:41.000Z",
+    "updatedAt": "2026-11-14T05:10:45.000Z",
+    "type": "movie",
+    "is4k": false,
+    "serverId": 0,
+    "profileId": 4,
+    "rootFolder": "/data/media/movies",
+    "languageProfileId": null,
+    "tags": [],
+    "isAutoRequest": false,
+    "ignoreQuota": false,
+    "media": {
+     "downloadStatus": [],
+     "downloadStatus4k": [],
+     "id": 929,
+     "mediaType": "movie",
+     "tmdbId": 985939,
+     "tvdbId": null,
+     "imdbId": null,
+     "status": 5,
+     "status4k": 1,
+     "createdAt": "2026-11-14T04:39:41.000Z",
+     "updatedAt": "2026-11-14T05:10:45.000Z",
+     "lastSeasonChange": "2026-11-14T04:39:41.000Z",
+     "mediaAddedAt": "2026-11-14T04:39:41.000Z",
+     "serviceId": 0,
+     "serviceId4k": null,
+     "externalServiceId": 645,
+     "externalServiceId4k": null,
+     "externalServiceSlug": "985939",
+     "externalServiceSlug4k": null,
+     "ratingKey": null,
+     "ratingKey4k": null,
+     "jellyfinMediaId": null,
+     "jellyfinMediaId4k": null,
+     "serviceUrl": "http://radarr.home.arpa:7878/movie/985939"
+    },
+    "seasons": [],
+    "modifiedBy": {
+     "permissions": 2,
+     "warnings": [],
+     "id": 1,
+     "email": "tyler.a.dance@gmail.com",
+     "plexUsername": null,
+     "jellyfinUsername": "Test User",
+     "username": null,
+     "recoveryLinkExpirationDate": null,
+     "userType": 3,
+     "plexId": null,
+     "jellyfinUserId": "00000000000000000000000000000000",
+     "avatar": "/avatarproxy/19caeaaa1def4970a0173049a8b8cdd3?v=null",
+     "avatarETag": null,
+     "avatarVersion": null,
+     "movieQuotaLimit": null,
+     "movieQuotaDays": null,
+     "tvQuotaLimit": null,
+     "tvQuotaDays": null,
+     "createdAt": "2026-02-26T02:02:58.000Z",
+     "updatedAt": "2026-02-26T02:02:58.000Z",
+     "requestCount": 820,
+     "displayName": "Test User"
+    },
+    "requestedBy": {
+     "permissions": 2,
+     "warnings": [],
+     "id": 1,
+     "email": "tyler.a.dance@gmail.com",
+     "plexUsername": null,
+     "jellyfinUsername": "Test User",
+     "username": null,
+     "recoveryLinkExpirationDate": null,
+     "userType": 3,
+     "plexId": null,
+     "jellyfinUserId": "00000000000000000000000000000000",
+     "avatar": "/avatarproxy/19caeaaa1def4970a0173049a8b8cdd3?v=null",
+     "avatarETag": null,
+     "avatarVersion": null,
+     "movieQuotaLimit": null,
+     "movieQuotaDays": null,
+     "tvQuotaLimit": null,
+     "tvQuotaDays": null,
+     "createdAt": "2026-02-26T02:02:58.000Z",
+     "updatedAt": "2026-02-26T02:02:58.000Z",
+     "requestCount": 820,
+     "displayName": "Test User"
+    },
+    "seasonCount": 0,
+    "profileName": "HD-1080p",
+    "canRemove": true
+   },
+   {
+    "id": 925,
+    "status": 5,
+    "createdAt": "2026-11-14T04:39:38.000Z",
+    "updatedAt": "2026-11-14T04:55:45.000Z",
+    "type": "movie",
+    "is4k": false,
+    "serverId": 0,
+    "profileId": 4,
+    "rootFolder": "/data/media/movies",
+    "languageProfileId": null,
+    "tags": [],
+    "isAutoRequest": false,
+    "ignoreQuota": false,
+    "media": {
+     "downloadStatus": [],
+     "downloadStatus4k": [],
+     "id": 928,
+     "mediaType": "movie",
+     "tmdbId": 8913,
+     "tvdbId": null,
+     "imdbId": null,
+     "status": 5,
+     "status4k": 1,
+     "createdAt": "2026-11-14T04:39:38.000Z",
+     "updatedAt": "2026-11-14T04:55:45.000Z",
+     "lastSeasonChange": "2026-11-14T04:39:38.000Z",
+     "mediaAddedAt": "2026-11-14T04:39:38.000Z",
+     "serviceId": 0,
+     "serviceId4k": null,
+     "externalServiceId": 644,
+     "externalServiceId4k": null,
+     "externalServiceSlug": "8913",
+     "externalServiceSlug4k": null,
+     "ratingKey": null,
+     "ratingKey4k": null,
+     "jellyfinMediaId": null,
+     "jellyfinMediaId4k": null,
+     "serviceUrl": "http://radarr.home.arpa:7878/movie/8913"
+    },
+    "seasons": [],
+    "modifiedBy": {
+     "permissions": 2,
+     "warnings": [],
+     "id": 1,
+     "email": "tyler.a.dance@gmail.com",
+     "plexUsername": null,
+     "jellyfinUsername": "Test User",
+     "username": null,
+     "recoveryLinkExpirationDate": null,
+     "userType": 3,
+     "plexId": null,
+     "jellyfinUserId": "00000000000000000000000000000000",
+     "avatar": "/avatarproxy/19caeaaa1def4970a0173049a8b8cdd3?v=null",
+     "avatarETag": null,
+     "avatarVersion": null,
+     "movieQuotaLimit": null,
+     "movieQuotaDays": null,
+     "tvQuotaLimit": null,
+     "tvQuotaDays": null,
+     "createdAt": "2026-02-26T02:02:58.000Z",
+     "updatedAt": "2026-02-26T02:02:58.000Z",
+     "requestCount": 820,
+     "displayName": "Test User"
+    },
+    "requestedBy": {
+     "permissions": 2,
+     "warnings": [],
+     "id": 1,
+     "email": "tyler.a.dance@gmail.com",
+     "plexUsername": null,
+     "jellyfinUsername": "Test User",
+     "username": null,
+     "recoveryLinkExpirationDate": null,
+     "userType": 3,
+     "plexId": null,
+     "jellyfinUserId": "00000000000000000000000000000000",
+     "avatar": "/avatarproxy/19caeaaa1def4970a0173049a8b8cdd3?v=null",
+     "avatarETag": null,
+     "avatarVersion": null,
+     "movieQuotaLimit": null,
+     "movieQuotaDays": null,
+     "tvQuotaLimit": null,
+     "tvQuotaDays": null,
+     "createdAt": "2026-02-26T02:02:58.000Z",
+     "updatedAt": "2026-02-26T02:02:58.000Z",
+     "requestCount": 820,
+     "displayName": "Test User"
+    },
+    "seasonCount": 0,
+    "profileName": "HD-1080p",
+    "canRemove": true
+   }
+  ],
+  "serviceErrors": {
+   "radarr": [],
+   "sonarr": []
+  }
+ },
+ "seerr_jobs": [
+  {
+   "id": "jellyfin-recently-added-scan",
+   "name": "Jellyfin Recently Added Scan",
+   "type": "process",
+   "interval": "minutes",
+   "cronSchedule": "0 */5 * * * *",
+   "nextExecutionTime": "2026-11-14T00:25:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "jellyfin-full-scan",
+   "name": "Jellyfin Full Library Scan",
+   "type": "process",
+   "interval": "hours",
+   "cronSchedule": "0 0 3 * * *",
+   "nextExecutionTime": "2026-11-14T03:00:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "radarr-scan",
+   "name": "Radarr Scan",
+   "type": "process",
+   "interval": "hours",
+   "cronSchedule": "0 */5 * * * *",
+   "nextExecutionTime": "2026-11-14T00:25:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "sonarr-scan",
+   "name": "Sonarr Scan",
+   "type": "process",
+   "interval": "hours",
+   "cronSchedule": "0 */5 * * * *",
+   "nextExecutionTime": "2026-11-14T00:25:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "availability-sync",
+   "name": "Media Availability Sync",
+   "type": "process",
+   "interval": "hours",
+   "cronSchedule": "0 */5 * * * *",
+   "nextExecutionTime": "2026-11-14T00:25:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "download-sync",
+   "name": "Download Sync",
+   "type": "command",
+   "interval": "seconds",
+   "cronSchedule": "0 * * * * *",
+   "nextExecutionTime": "2026-11-14T00:25:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "download-sync-reset",
+   "name": "Download Sync Reset",
+   "type": "command",
+   "interval": "hours",
+   "cronSchedule": "0 0 1 * * *",
+   "nextExecutionTime": "2026-11-14T01:00:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "image-cache-cleanup",
+   "name": "Image Cache Cleanup",
+   "type": "process",
+   "interval": "hours",
+   "cronSchedule": "0 0 5 * * *",
+   "nextExecutionTime": "2026-11-14T05:00:00.000-05:00",
+   "running": false
+  },
+  {
+   "id": "process-blocklisted-tags",
+   "name": "Process Blocklisted Tags",
+   "type": "process",
+   "interval": "days",
+   "cronSchedule": "0 30 1 */7 * *",
+   "nextExecutionTime": "2026-11-15T01:30:00.000-05:00",
+   "running": false
+  }
+ ],
+ "jellyfin_items": {
+  "Items": [
+   {
+    "Name": "\"Wuthering Heights\"",
+    "ServerId": "ecd403d0e1854f85a5cc10dadaa2455a",
+    "Id": "20c3c63081ada97bfbe49336d7532b1f",
+    "DateCreated": "2026-03-30T00:06:47.0000000Z",
+    "HasSubtitles": true,
+    "Container": "mkv",
+    "PremiereDate": "2026-02-11T00:00:00.0000000Z",
+    "OfficialRating": "CA-14A",
+    "ChannelId": null,
+    "CommunityRating": 6.4,
+    "RunTimeTicks": 81921280000,
+    "ProductionYear": 2026,
+    "ProviderIds": {
+     "Imdb": "tt32897959",
+     "Tmdb": "1316092"
+    },
+    "IsFolder": false,
+    "Type": "Movie",
+    "UserData": {
+     "PlaybackPositionTicks": 0,
+     "PlayCount": 0,
+     "IsFavorite": false,
+     "Played": false,
+     "Key": "1316092",
+     "ItemId": "20c3c63081ada97bfbe49336d7532b1f"
+    },
+    "VideoType": "VideoFile",
+    "ImageTags": {
+     "Thumb": "da3d9f02feebf6246fae2c60bbeb889d",
+     "Logo": "02e77eaa56be54474992f65a0e629bdb",
+     "Primary": "0ce3b39fee6293bb6cc7c8daf90a2309"
+    },
+    "BackdropImageTags": [
+     "223a0057fbf6e917e1f761edbd5164a6"
+    ],
+    "ImageBlurHashes": {
+     "Backdrop": {
+      "223a0057fbf6e917e1f761edbd5164a6": "WlOzGH-;_3xvD%%M~qt7%MRjIU%MWWWBRPaekCbH?bjtj[xuWBRj"
+     },
+     "Thumb": {
+      "da3d9f02feebf6246fae2c60bbeb889d": "WgP6jf~W%ME1?b%g^+%2RjNa%gWBbcRPadjbaeof_3ozxaRPaexu"
+     },
+     "Logo": {
+      "02e77eaa56be54474992f65a0e629bdb": "VhNIHkkn.moypbH=MwIAXRWA.8R5jcW=Vs%MaLtRjbo#"
+     },
+     "Primary": {
+      "0ce3b39fee6293bb6cc7c8daf90a2309": "dlNw1b?H?vx]~q%MkVt7?HD%E1t7-poLW;WVbHxuR*ae"
+     }
+    },
+    "LocationType": "FileSystem",
+    "MediaType": "Video"
+   },
+   {
+    "Name": "2 Fast 2 Furious",
+    "ServerId": "ecd403d0e1854f85a5cc10dadaa2455a",
+    "Id": "f65a6c960b6cd245f56bef99703e6c40",
+    "DateCreated": "2026-03-01T01:24:48.0000000Z",
+    "HasSubtitles": true,
+    "Container": "mkv",
+    "PremiereDate": "2003-06-05T00:00:00.0000000Z",
+    "CriticRating": 37,
+    "OfficialRating": "CA-14A",
+    "ChannelId": null,
+    "CommunityRating": 6.516,
+    "RunTimeTicks": 64617920000,
+    "ProductionYear": 2003,
+    "ProviderIds": {
+     "Imdb": "tt0322259",
+     "Tmdb": "584",
+     "TmdbCollection": "9485"
+    },
+    "IsFolder": false,
+    "Type": "Movie",
+    "UserData": {
+     "PlaybackPositionTicks": 0,
+     "PlayCount": 0,
+     "IsFavorite": false,
+     "Played": false,
+     "Key": "584",
+     "ItemId": "f65a6c960b6cd245f56bef99703e6c40"
+    },
+    "VideoType": "VideoFile",
+    "ImageTags": {
+     "Thumb": "105a2d28f3269c6282983d1406b4f859",
+     "Primary": "ecb039b275259781b0af4eb2a665115b",
+     "Logo": "9642bb0d752501b97f7c4fd991462d11"
+    },
+    "BackdropImageTags": [
+     "25378c730c616f5cf39121558ab0114a"
+    ],
+    "ImageBlurHashes": {
+     "Backdrop": {
+      "25378c730c616f5cf39121558ab0114a": "W:PZr+xu~q-;D%xu?bj[kBofRjj@Rjj[ofWBofoy-;fkoeofozof"
+     },
+     "Thumb": {
+      "105a2d28f3269c6282983d1406b4f859": "W,PjJmxu~q-;IUxv?bj[jsofRjj[M{j[t7WBj[of%Mj[t7ofj[of"
+     },
+     "Primary": {
+      "ecb039b275259781b0af4eb2a665115b": "dmHoUgx]?b%M~qt7%gt7Inj[M{Rjbct7M{WVxuofozof"
+     },
+     "Logo": {
+      "9642bb0d752501b97f7c4fd991462d11": "OHDTV7%$rCDh.7Di-oW@WAWAt7aeWqRj~B~V%gNeM|xvxu"
+     }
+    },
+    "LocationType": "FileSystem",
+    "MediaType": "Video"
+   },
+   {
+    "Name": "22 Jump Street",
+    "ServerId": "ecd403d0e1854f85a5cc10dadaa2455a",
+    "Id": "93025068631a88a3b24111e1cc4d4d60",
+    "DateCreated": "2026-06-07T23:06:05.9332778Z",
+    "HasSubtitles": true,
+    "Container": "mkv",
+    "PremiereDate": "2014-06-05T00:00:00.0000000Z",
+    "CriticRating": 84,
+    "OfficialRating": "CA-14A",
+    "ChannelId": null,
+    "CommunityRating": 6.827,
+    "RunTimeTicks": 67167360000,
+    "ProductionYear": 2014,
+    "ProviderIds": {
+     "Imdb": "tt2294449",
+     "Tmdb": "187017",
+     "TmdbCollection": "212562"
+    },
+    "IsFolder": false,
+    "Type": "Movie",
+    "UserData": {
+     "PlaybackPositionTicks": 0,
+     "PlayCount": 0,
+     "IsFavorite": false,
+     "Played": false,
+     "Key": "187017",
+     "ItemId": "93025068631a88a3b24111e1cc4d4d60"
+    },
+    "VideoType": "VideoFile",
+    "ImageTags": {
+     "Primary": "7e64170c115913ae05699dfcc369417d",
+     "Logo": "f107cffabe50dc3fcf5776263c834241",
+     "Thumb": "2117be5f88274351130b14a87df60c8e"
+    },
+    "BackdropImageTags": [
+     "a717d0d53e536d5275d76175918e571c"
+    ],
+    "ImageBlurHashes": {
+     "Backdrop": {
+      "a717d0d53e536d5275d76175918e571c": "WiIXBX-o-oozNaxt~qxtbcslnjs;u5xuS$oMoJX9%#xuj]ozoJX9"
+     },
+     "Primary": {
+      "7e64170c115913ae05699dfcc369417d": "drMZm]xtNa%3~qxux]xukXbI%gtR?aa}oft6%MjFV@WC"
+     },
+     "Logo": {
+      "f107cffabe50dc3fcf5776263c834241": "HXLysImRQ7Q7oz,@xut7e9~CRPTJXmsonit7jFni"
+     },
+     "Thumb": {
+      "2117be5f88274351130b14a87df60c8e": "WmIr56t8H;t6X9wvK8og%Lt7Vsoe9cbIXSWYtQbb%gX9V@WBS5kC"
+     }
+    },
+    "LocationType": "FileSystem",
+    "MediaType": "Video"
+   }
+  ],
+  "TotalRecordCount": 398,
+  "StartIndex": 0
+ },
+ "sonarr_series": {
+  "title": "A Knight of the Seven Kingdoms",
+  "alternateTitles": [
+   {
+    "title": "El caballero de los Siete Reinos",
+    "seasonNumber": -1
+   }
+  ],
+  "sortTitle": "knight of the seven kingdoms",
+  "status": "continuing",
+  "ended": false,
+  "overview": "A century before the events of Game of Thrones, two unlikely heroes wandered Westeros, a young knight, Ser Duncan the Tall, and his squire, Egg, set in an age when the Targaryen line still holds the Iron Throne.",
+  "previousAiring": "2026-02-23T03:00:00Z",
+  "network": "HBO",
+  "airTime": "22:00",
+  "images": [
+   {
+    "coverType": "banner",
+    "url": "/MediaCover/3/banner.jpg?lastWrite=639077151742885076",
+    "remoteUrl": "https://artworks.thetvdb.com/banners/v4/series/433631/banners/696d01d889ebf.jpg"
+   },
+   {
+    "coverType": "poster",
+    "url": "/MediaCover/3/poster.jpg?lastWrite=639077151742985076",
+    "remoteUrl": "https://artworks.thetvdb.com/banners/v4/series/433631/posters/6934ab30720ee.jpg"
+   },
+   {
+    "coverType": "fanart",
+    "url": "/MediaCover/3/fanart.jpg?lastWrite=639077151743065076",
+    "remoteUrl": "https://artworks.thetvdb.com/banners/v4/series/433631/backgrounds/6934a76d9bbba.jpg"
+   },
+   {
+    "coverType": "clearlogo",
+    "url": "/MediaCover/3/clearlogo.png?lastWrite=639077151743115076",
+    "remoteUrl": "https://artworks.thetvdb.com/banners/v4/series/433631/clearlogo/696cfcd38cd4e.png"
+   }
+  ],
+  "originalLanguage": {
+   "id": 1,
+   "name": "English"
+  },
+  "seasons": [
+   {
+    "seasonNumber": 0,
+    "monitored": false,
+    "statistics": {
+     "episodeFileCount": 0,
+     "episodeCount": 0,
+     "totalEpisodeCount": 9,
+     "sizeOnDisk": 0,
+     "releaseGroups": [],
+     "percentOfEpisodes": 0
+    }
+   },
+   {
+    "seasonNumber": 1,
+    "monitored": true,
+    "statistics": {
+     "previousAiring": "2026-02-23T03:00:00Z",
+     "episodeFileCount": 6,
+     "episodeCount": 6,
+     "totalEpisodeCount": 6,
+     "sizeOnDisk": 10979545907,
+     "releaseGroups": [
+      "FLUX",
+      "Kitsune",
+      "NTb",
+      "WADU",
+      "YumiFRDS"
+     ],
+     "percentOfEpisodes": 100
+    }
+   }
+  ],
+  "year": 2026,
+  "path": "/data/media/tv/A Knight of the Seven Kingdoms",
+  "qualityProfileId": 4,
+  "seasonFolder": true,
+  "monitored": true,
+  "monitorNewItems": "all",
+  "useSceneNumbering": false,
+  "runtime": 33,
+  "tvdbId": 433631,
+  "tvRageId": 0,
+  "tvMazeId": 53063,
+  "tmdbId": 224372,
+  "firstAired": "2026-01-18T00:00:00Z",
+  "lastAired": "2026-02-22T00:00:00Z",
+  "seriesType": "standard",
+  "cleanTitle": "aknightsevenkingdoms",
+  "imdbId": "tt27497448",
+  "titleSlug": "a-knight-of-the-seven-kingdoms",
+  "rootFolderPath": "/data/media/tv",
+  "certification": "TV-MA",
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama",
+   "Fantasy"
+  ],
+  "tags": [],
+  "added": "2026-02-26T15:06:14Z",
+  "ratings": {
+   "votes": 294254,
+   "value": 8.6
+  },
+  "statistics": {
+   "seasonCount": 1,
+   "episodeFileCount": 6,
+   "episodeCount": 6,
+   "totalEpisodeCount": 15,
+   "sizeOnDisk": 10979545907,
+   "releaseGroups": [
+    "FLUX",
+    "Kitsune",
+    "NTb",
+    "WADU",
+    "YumiFRDS"
+   ],
+   "percentOfEpisodes": 100
+  },
+  "languageProfileId": 1,
+  "id": 3
+ },
+ "nzbget_reachable": false,
+ "nzbget_error": "HTTP Error 401: Unauthorized"
+}
