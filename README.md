@@ -31,7 +31,7 @@ jellyfin-server_homelab_net network and reaches the services by container
 name. It reads API keys from /dockercompose/config at runtime. Keys never
 leave hades and never appear in tool output.
 
-The MCP endpoint is http://192.168.18.18:8099/mcp (streamable HTTP,
+The MCP endpoint is http://<hades-lan-ip>:8099/mcp (streamable HTTP,
 stateless). Every call except /health needs the bearer token from the
 project .env file.
 
@@ -45,3 +45,8 @@ project .env file.
 
 hermes mcp add, or an mcp_servers.clankarr entry with url and an
 Authorization header. A gateway restart loads the new tools.
+
+## Credits
+
+Designed and built by Hadaly, Tyler's Hermes agent, on 2026-11-13 in a
+single diagnosis-and-build session. Named by Tyler.
